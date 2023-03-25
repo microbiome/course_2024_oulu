@@ -11,13 +11,13 @@ already before the course.
 
 ## Lecture slides
 
-[Slides](https://github.com/microbiome/course_2022_oulu/tree/main/slides) 
+[Slides](https://github.com/microbiome/course_2023_oulu/tree/main/slides) 
 
 ## Tasks
 
 [Exercises](https://microbiome.github.io/OMA/exercises.html)
 
-[Example solutions](https://github.com/microbiome/course_2022_oulu/blob/main/example_solutions.Rmd)
+[Example solutions](https://github.com/microbiome/course_2023_oulu/blob/main/example_solutions.Rmd)
 
 
 ## Extra material on miaverse and R programming
@@ -34,6 +34,6 @@ The data consist of 4 groups:
     - Low-fat diet without prebiotics
     - Low-fat diet with prebiotics
 
-You can find the data from [here](https://github.com/microbiome/course_2022_oulu/tree/main/data).
+You can find the data from [here](https://github.com/microbiome/course_2023_oulu/tree/main/data).
     
     

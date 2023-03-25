@@ -1,7 +1,7 @@
 Package: Course
 Title: Microbiome data science course
 Version: 0.1
-Date: 2022-04-23
+Date: 2023-04-23
 Authors@R: 
     c(person("Leo", "Lahti", email = "leo.lahti@utu.fi",
              role = c("aut", "cre"),             
@@ -14,8 +14,8 @@ Description:
     Bioconductor in R miaverse framework.
 License: CC BY-NC-SA 3.0 US
 Encoding: UTF-8
-URL: https://github.com/microbiome/course_2022_oulu
-BugReports: https://github.com/microbiome/course_2022_oulu/issues
+URL: https://github.com/microbiome/course_2023_oulu
+BugReports: https://github.com/microbiome/course_2023_oulu/issues
 LazyData: true
 biocViews:
     Book

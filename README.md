@@ -1,6 +1,6 @@
 # Multi-omic data science with R/Bioconductor
 
-**Welcome to Oulu Summer School, June 2022**
+**Welcome to Oulu Summer School, June 2023**
 
 <img src="https://user-images.githubusercontent.com/60338854/121848694-1072a480-ccf3-11eb-9af2-7fdefd8d1794.png" alt="ML4microbiome" width="50%"/>
 
@@ -63,11 +63,11 @@ biomedical data analysis. Academic students and researchers from Finland and abr
 welcome and encouraged to apply. The course has limited capacity of max 20 participants,
 and priority will be given for local students from Oulu.
 
-**Venue** University of Oulu. June 20-23, 2022.
+**Venue** University of Oulu. June 20-23, 2023.
 
 ## Acknowledgments
 
-**Citation** "Multi-omic data science with R/Bioconductor (2022). Tuomas Borman and Leo Lahti. URL: https://microbiome.github.io/course_2022_oulu/"
+**Citation** "Multi-omic data science with R/Bioconductor (2023). Tuomas Borman and Leo Lahti. URL: https://microbiome.github.io/course_2023_oulu/"
 
 **Contact**
 - [Leo Lahti](http://datascience.utu.fi), University of Turku
