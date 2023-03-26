@@ -4,25 +4,25 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Multi-omic data science with R/Bioconductor</title>
+  <title>Multi-omic data analysis with R/Bioconductor</title>
   <meta name="description" content="Course material" />
   <meta name="generator" content="bookdown 0.33 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Multi-omic data science with R/Bioconductor" />
+  <meta property="og:title" content="Multi-omic data analysis with R/Bioconductor" />
   <meta property="og:type" content="book" />
   
   <meta property="og:description" content="Course material" />
   <meta name="github-repo" content="microbiome/course_2023_oulu" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Multi-omic data science with R/Bioconductor" />
+  <meta name="twitter:title" content="Multi-omic data analysis with R/Bioconductor" />
   
   <meta name="twitter:description" content="Course material" />
   
 
 
 
-<meta name="date" content="2023-03-25" />
+<meta name="date" content="2023-03-26" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -75,9 +75,10 @@
 <li class="chapter" data-level="1" data-path="index.html"><a href="#overview"><i class="fa fa-check"></i><b>1</b> Overview</a>
 <ul>
 <li class="chapter" data-level="1.1" data-path="index.html"><a href="#contents-and-learning-goals"><i class="fa fa-check"></i><b>1.1</b> Contents and learning goals</a></li>
-<li class="chapter" data-level="1.2" data-path="index.html"><a href="#schedule-and-organizers"><i class="fa fa-check"></i><b>1.2</b> Schedule and organizers</a></li>
+<li class="chapter" data-level="1.2" data-path="index.html"><a href="#schedule"><i class="fa fa-check"></i><b>1.2</b> Schedule</a></li>
 <li class="chapter" data-level="1.3" data-path="index.html"><a href="#how-to-apply"><i class="fa fa-check"></i><b>1.3</b> How to apply</a></li>
-<li class="chapter" data-level="1.4" data-path="index.html"><a href="#acknowledgments"><i class="fa fa-check"></i><b>1.4</b> Acknowledgments</a></li>
+<li class="chapter" data-level="1.4" data-path="index.html"><a href="#teachers-and-organizers"><i class="fa fa-check"></i><b>1.4</b> Teachers and organizers</a></li>
+<li class="chapter" data-level="1.5" data-path="index.html"><a href="#acknowledgments"><i class="fa fa-check"></i><b>1.5</b> Acknowledgments</a></li>
 </ul></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
@@ -91,7 +92,7 @@
       <div class="body-inner">
         <div class="book-header" role="navigation">
           <h1>
-            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Multi-omic data science with R/Bioconductor</a>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Multi-omic data analysis with R/Bioconductor</a>
           </h1>
         </div>
 
@@ -100,42 +101,56 @@
 
             <section class="normal" id="section-">
 <div id="header">
-<h1 class="title">Multi-omic data science with R/Bioconductor</h1>
-<h2 class="subtitle"><em>Welcome to Oulu Summer School, June 2023</em></h2>
-<p class="date"><em>2023-03-25</em></p>
+<h1 class="title">Multi-omic data analysis with R/Bioconductor</h1>
+<h2 class="subtitle"><em>Oulu Summer School, June 2023</em></h2>
+<p class="date"><em>2023-03-26</em></p>
 </div>
 <div id="overview" class="section level1 hasAnchor" number="1">
 <h1><span class="header-section-number">1</span> Overview<a href="#overview" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p><a href="https://bioconductor.org"><img src="https://github.com/Bioconductor/BiocStickers/raw/master/Bioconductor/Bioconductor-serial.gif" width="200" alt="Bioconductor Sticker" align="right" style="margin: 0 1em 0 1em" /></a></p>
+<!--<a href="https://bioconductor.org"><img src="https://github.com/Bioconductor/BiocStickers/raw/master/Bioconductor/Bioconductor-serial.gif" width="200" alt="Bioconductor Sticker" align="right" style="margin: 0 1em 0 1em" /></a>-->
+<p><a href="https://bioconductor.org"><img src="bioconductor_logo_rgb.jpg" width="200" alt="Bioconductor Sticker" align="right" style="margin: 0 1em 0 1em" /></a></p>
 <div id="contents-and-learning-goals" class="section level2 hasAnchor" number="1.1">
 <h2><span class="header-section-number">1.1</span> Contents and learning goals<a href="#contents-and-learning-goals" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>This course will focus on <strong>multi-omic data integration and analysis with R/Bioconductor</strong>, a popular open source environment for scientific data analysis. As a participant, you will get an overview of reproducible data science workflows based on examples from recently published microbiome studies. After the course you will know how to approach common data analysis tasks in taxonomic and functional profiling studies by utilizing available documentation and R tools.</p>
-<p>The teaching follows open online documentation created by the course teachers, extending the online book Orchestrating Microbiome Analysis <a href="https://microbiome.github.io/OMA">https://microbiome.github.io/OMA</a>. The training material walks you through the standard steps of omics data analysis covering data access, exploration, analysis, visualization, and best practices in open science.</p>
+<div class="grid">
+<div class="g-col-8">
+<p><strong>Contents and learning goals</strong> This course will teach the basics on multi-omic data integration and analysis with R/Bioconductor, a popular open source environment for scientific data analysis. We will focus on examples from recently published microbiome studies. After the course you will know how to approach common data analysis tasks by utilizing available documentation and R tools.</p>
+<p><strong>Target audience</strong> MSc students, PhD, postdoctoral, and other researchers who wish to learn generic skills in scientific programming and data analysis. While priority will be given for local students from Oulu, academic students and researchers from Finland and abroad are welcome and encouraged to apply.</p>
+<p><strong>Teaching material</strong> We will follow open online documentation created by the course teachers, Orchestrating Microbiome Analysis <a href="https://microbiome.github.io/OMA">https://microbiome.github.io/OMA</a>. The training material walks you through the standard steps of omics data analysis covering data access, exploration, analysis, visualization, and reproducible workflows. Preparatory material and video clips, and online support are available before the course. All teaching material will be shared openly.</p>
 </div>
-<div id="schedule-and-organizers" class="section level2 hasAnchor" number="1.2">
-<h2><span class="header-section-number">1.2</span> Schedule and organizers<a href="#schedule-and-organizers" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div class="g-col-3">
+<div class="figure">
+<img src="fig.png" fig-align="center" width="300" alt="" />
+<p class="caption">Figure source: Moreno-Indias <em>et al</em>. (2021) <em>Frontiers in Microbiology</em> 12:11.</p>
+</div>
+</div>
+</div>
+</div>
+<div id="schedule" class="section level2 hasAnchor" number="1.2">
+<h2><span class="header-section-number">1.2</span> Schedule<a href="#schedule" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>The course is organized in a live format. Preparatory material and video clips, and online support are available before the course. All teaching material will be shared openly.</p>
-<p><strong>Venue</strong> University of Oulu. June 20-22, 2023 (Tue-Thu).</p>
-<p><strong>Schedule</strong> Contact teaching daily between 9:30am – 16:30pm, including lectures, demonstrations, hands-on sessions, and breaks. A detailed schedule is being updated at the course website: <a href="https://microbiome.github.io/course_2023_oulu">https://microbiome.github.io/course_2023_oulu</a></p>
-<p><strong>Teachers</strong> <a href="https://datascience.utu.fi">Leo Lahti</a> is the main teacher and Associate Professor in Data Science at the University of Turku, with two decades of experience in statistical data analysis and R/Bioconductor development. Course assistants are PhD researchers <em>Tuomas Borman</em> (University of Turku), one of the main developers of the open training material covered by the course, and <em>Jenni Hekkala</em> (University of Oulu), from the group of the course coordinator Docent <em>Justus Reunanen</em>.</p>
-<p>The course is jointly organized by Health and Biosciences Doctoral Programme (HBS-DP) University of Oulu Graduate School, Cancer &amp; Translational Medicine Research Unit, University of Oulu, and the Department of Computing, University of Turku, Finland. The Finnish IT Center for Science (CSC) supports the course with cloud computing services.</p>
+<p><strong>Venue</strong> University of Oulu. June 20-22, 2023 (Tue-Thu). The course is organized in a live format.</p>
+<p><strong>Costs</strong> no registation fee; participants are expected to cover their own travel and accommodation (see the course homepage).</p>
+<p><strong>Accommodation</strong> tips: <a href="https://visitoulu.fi/en/arrival-overnight/" class="uri">https://visitoulu.fi/en/arrival-overnight/</a></p>
+<p><strong>Schedule</strong> Contact teaching daily between 9am – 16pm, including lectures, demonstrations, hands-on sessions, and breaks.</p>
+<ul>
+<li>Day 1 R/Bioconductor framework and reproducible workflows</li>
+<li>Day 2 Tabular data analysis and examples from microbiome research</li>
+<li>Day 3 Multi-assay data integration approaches</li>
+</ul>
 </div>
 <div id="how-to-apply" class="section level2 hasAnchor" number="1.3">
 <h2><span class="header-section-number">1.3</span> How to apply<a href="#how-to-apply" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p><strong>Target audience</strong></p>
-<p>The course is designed for advanced MSc and PhD students, Postdocs, and researchers who wish to learn new skills in scientific programming and data analysis, with an emphasis on microbiome research and multi-omics. Academic students and researchers from Finland and abroad are welcome and encouraged to apply. The course has limited capacity of max 20 participants, and priority will be given for local students from Oulu.</p>
-<p><strong>Application</strong></p>
 <ul>
 <li>Send a brief motivation letter to Jenni Hekkala <a href="mailto:jenni.hekkala@oulu.fi" class="email">jenni.hekkala@oulu.fi</a></li>
-<li>Applications sent before May 15 will be given priority</li>
+<li>Applications sent before May 15 will be given priority. The course has maximum capacity of 20 participants.</li>
 </ul>
-<p><strong>Course fee</strong></p>
-<p>The course does not have a registation fee. Participants are expected to cover their own travel and accommodation.</p>
-<p><strong>Accommodation</strong></p>
-<p>For accommodation tips, see <a href="https://visitoulu.fi/en/arrival-overnight/" class="uri">https://visitoulu.fi/en/arrival-overnight/</a>.</p>
 </div>
-<div id="acknowledgments" class="section level2 hasAnchor" number="1.4">
-<h2><span class="header-section-number">1.4</span> Acknowledgments<a href="#acknowledgments" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="teachers-and-organizers" class="section level2 hasAnchor" number="1.4">
+<h2><span class="header-section-number">1.4</span> Teachers and organizers<a href="#teachers-and-organizers" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p><strong>Teachers</strong> <a href="https://datascience.utu.fi">Leo Lahti</a> is the main teacher and Associate Professor in Data Science at the University of Turku. Course assistants are PhD researchers <em>Tuomas Borman</em> (Turku), and <em>Jenni Hekkala</em> (Oulu) from the group of the course coordinator Docent <em>Justus Reunanen</em>. The course is jointly organized by <a href="https://www.oulu.fi/en/research/graduate-school/organisation-and-contact-information-uniogs/health-and-biosciences-doctoral-programme">Health and Biosciences Doctoral Programme (HBS-DP)</a> University of Oulu Graduate School, Cancer &amp; Translational Medicine Research Unit, University of Oulu, and the Department of Computing, University of Turku, Finland. The <a href="https://csc.fi/">Finnish IT Center for Science (CSC)</a> supports the course by providing cloud computing services.</p>
+</div>
+<div id="acknowledgments" class="section level2 hasAnchor" number="1.5">
+<h2><span class="header-section-number">1.5</span> Acknowledgments<a href="#acknowledgments" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p><strong>Citation</strong> We thank all <a href="https://microbiome.github.io">developers and contributors</a> who have contributed open resources that supported the development of the training material. Kindly cite the course material as <span class="citation">Tuomas Borman and Leo Lahti (<a href="#ref-miacourse" role="doc-biblioref">2023</a>)</span></p>
 <p><strong>Contact</strong> See <a href="https://microbiome.github.io">https://microbiome.github.io</a></p>
 <p><strong>License and source code</strong></p>
