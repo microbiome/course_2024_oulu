@@ -1,17 +1,17 @@
-# Program
+# Program {#program}
 
-The course takes place daily from 9am – 5pm (CEST), including
-coffee and lunch breaks.
+The course takes place daily from 9am – 5pm (CEST), including coffee,
+lunch, and short breaks. Most of the time will be dedicated to
+practical exercises, complemented by lectures and demos.
 
-We expect that participants will prepare for the course in advance, see section
-\@ref(start). Online support is available.
-
+We expect that participants will prepare for the course in advance.
+Instructions will be sent to the registered participants. Online
+support will be available.
 
 The material follows open online book created by the course teachers,
-Orchestrating Microbiome Analysis
-https://microbiome.github.io/OMA. This is R/Bioconductor framework for
-multi-omic data science.
-
+[Orchestrating Microbiome Analysis](https://microbiome.github.io/OMA),
+which supports R/Bioconductor framework for multi-omic data
+integration and analysis.
 
 <img src="fig.png" alt="ML4microbiome" width="50%"/>
 <p style="font-size:12px">Figure source: Moreno-Indias _et al_. (2021) [Statistical and Machine Learning Techniques in Human Microbiome Studies: Contemporary Challenges and Solutions](https://doi.org/10.3389/fmicb.2021.635781). Frontiers in Microbiology 12:11.</p>
@@ -19,86 +19,70 @@ multi-omic data science.
 
 ## Day 1 - Open data science 
 
-**Morning session**
+Reproducible workflows with R/Bioconductor and Quarto 
+
+**Morning**
 
 9-10 Coffee, Welcome & Practicalities
 
-10-11 Lecture: Open & reproducible workflows 
+10-11 Lecture: open & reproducible workflows 
 
-11-12 Demo & hands-on: Introduction to CSC RStudio notebook 
+11-12 Introduction to CSC RStudio notebook 
 
 12-13 Lunch break
 
 
-**Afternoon hands-on session**
+**Afternoon**
 
-13-15 Demo: Data science framework
+13-14 Reproducible reporting with Quarto
 
-15-17 Hands-on: microbiome data summaries & exploration 
-
-17-18 Presentations & Discussion
-
+14-16 Working with data containers and workflows
 
 ----------------------------------------------------------------
 
-## Day 2 - Tabular data 
+## Day 2 - Tabular data analysis
 
-**Morning session**
+**Morning**
 
- 9-10 Lecture: Analysis & visualization of _tabular data_
+ 9-10 Lecture: analysis & visualization of _tabular data_ (single omics)
 
-10-12 Demo & hands-on: Univariate methods
+10-12 Subsetting, transformations, and data summaries
 
 12-13 Lunch break
 
-**Afternoon hands-on session**
+**Afternoon**
 
-13-14 Demo: Multivariate data analysis & visualization
+13-14 Univariate data analysis and visualization
 
-14-17 Hands-on: Multivariate data analysis & visualization
+14-16 Multivariate data analysis and visualization
 
-17-18 Presentations & Discussion
+**Evening**
+
+Informal course dinner (at own cost)
 
 ----------------------------------------------------------------
 
-## Day 3 - Multi-assay data
+## Day 3 - Multi-assay data integration 
 
-**Morning session**
+**Morning**
 
- 9-10 Lecture: multi-omic data integration
+ 9-10 Lecture: analysis & visualization of _multi-assay data_ (multi-omics)
 
-10-12 Demo & hands-on: multi-assay data container
+10-12 Multi-assay data analysis and visualization
 
 12-13 Lunch break
 
 
-**Afternoon hands-on session**
+**Afternoon**
 
-13-15: Demo & hands-on: association analysis
+13-15: Q & A and advanced techniques (e.g. time series, machine learning, simulation)
 
-13-17: Demo & hands-on: machine learning
-
-17-18 Presentations & Discussion
+15-16: Summary and wrap-up
 
 
------------------------------------------------------------------
-
-## Day 4 - Advanced topics
-
-**Morning session**
-
- 9-10 Summary of the learning material
-
-10-12 Demo & hands-on: custom data & advanced tools
-
-12-13 Q & A session
 
 
-**Afternoon session**
 
-13-14 Lunch
-
-14-16 Wrap-up
 
 
 

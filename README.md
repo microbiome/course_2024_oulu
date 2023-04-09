@@ -9,10 +9,16 @@ Figure source: Moreno-Indias _et al_. (2021) [Statistical and Machine Learning T
 
 ## Rendering the book
 
-You can render the book locally in R with:
+View the book locally in R:
 
 ```{r serve}
 bookdown::serve_book()
+``` 
+
+Render the book locally in R:
+
+```{r render}
+bookdown::render_book()
 ``` 
 
 ## The miaverse framework
