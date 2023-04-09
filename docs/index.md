@@ -1,7 +1,7 @@
 --- 
 title: "Multi-omic data analysis with R/Bioconductor"
 subtitle: "Oulu Summer School, June 2023"
-date: "2023-04-09"
+date: "2023-04-10"
 site: bookdown::bookdown_site
 documentclass: book
 bibliography: [packages.bib]
@@ -53,7 +53,8 @@ The course is organized in a live format. Preparatory material and video clips, 
 
 **Venue** University of Oulu. June 20-22, 2023 (Tue-Thu). The course is organized in a live format. 
 
-**Costs** no registration fee; participants are expected to cover their own travel and accommodation
+**Costs** no registration fee; participants are expected to cover
+  their own travel and accommodation
 
 **Accommodation** tips: <https://visitoulu.fi/en/arrival-overnight/>
 
