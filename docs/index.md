@@ -51,7 +51,7 @@ geometry:
 
 The course is organized in a live format. Preparatory material and video clips, and online support are available before the course. All teaching material will be shared openly.
 
-**Venue** University of Oulu. June 20-22, 2023 (Tue-Thu). The course is organized in a live format. 
+**Venue** University of Oulu. June 19-21, 2023 (Mon-Wed). The course is organized in a live format. 
 
 **Costs** no registration fee; participants are expected to cover
   their own travel and accommodation
@@ -68,13 +68,13 @@ For a detailed schedule, see Section \@ref(program).
 
 ## How to apply
 
--   Send a brief motivation letter to Jenni Hekkala [jenni.hekkala\@oulu.fi](mailto:jenni.hekkala@oulu.fi){.email}
+-   Send a brief motivation letter to Anna Kaisanlahti [anna.kaisanlahti\@oulu.fi](mailto:anna.kaisanlahti@oulu.fi){.email}
 -   Applications sent before May 15 will be given priority. The course has maximum capacity of 20 participants. 
 
 
 ## Teachers and organizers
 
-**Teachers** [Leo Lahti](https://datascience.utu.fi) is the main teacher and Associate Professor in Data Science at the University of Turku. Course assistants are PhD researchers *Tuomas Borman* (Turku), and *Jenni Hekkala* (Oulu) from the group of the course coordinator Docent *Justus Reunanen*. The course is jointly organized by [Health and Biosciences Doctoral Programme (HBS-DP)](https://www.oulu.fi/en/research/graduate-school/organisation-and-contact-information-uniogs/health-and-biosciences-doctoral-programme) University of Oulu Graduate School, Research Unit of Translational Medicine, University of Oulu, and the Department of Computing, University of Turku, Finland. The [Finnish IT Center for Science (CSC)](https://csc.fi/) supports the course by providing cloud computing services.
+**Teachers** [Leo Lahti](https://datascience.utu.fi) is the main teacher and Associate Professor in Data Science at the University of Turku. Course assistants are PhD researchers *Tuomas Borman* (Turku), and *Anna Kaisanlahti* (Oulu) from the group of the course coordinator Docent *Justus Reunanen*. The course is jointly organized by [Health and Biosciences Doctoral Programme (HBS-DP)](https://www.oulu.fi/en/research/graduate-school/organisation-and-contact-information-uniogs/health-and-biosciences-doctoral-programme) University of Oulu Graduate School, Research Unit of Translational Medicine, University of Oulu, and the Department of Computing, University of Turku, Finland. The [Finnish IT Center for Science (CSC)](https://csc.fi/) supports the course by providing cloud computing services.
 
 
 
