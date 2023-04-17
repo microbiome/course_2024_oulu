@@ -1,7 +1,7 @@
 --- 
 title: "Multi-omic data analysis with R/Bioconductor"
 subtitle: "Oulu Summer School, June 2023"
-date: "2023-04-10"
+date: "2023-04-17"
 site: bookdown::bookdown_site
 documentclass: book
 bibliography: [packages.bib]
@@ -53,29 +53,34 @@ The course is organized in a live format. Preparatory material and video clips, 
 
 **Venue** University of Oulu. June 19-21, 2023 (Mon-Wed). The course is organized in a live format. 
 
-**Costs** no registration fee; participants are expected to cover
+**Costs** no registration fee. Participants are expected to cover
   their own travel and accommodation
 
 **Accommodation** tips: <https://visitoulu.fi/en/arrival-overnight/>
 
-**Schedule** Contact teaching daily between 9am -- 16pm, including lectures, demonstrations, hands-on sessions, and breaks. 
+**Schedule** Contact teaching daily between 9am -- 4pm, including lectures, demonstrations, hands-on sessions, and breaks. 
 
  * Day 1 Reproducible workflows with R/Bioconductor and Quarto 
  * Day 2 Tabular data analysis (working with single 'omics) 
  * Day 3 Multi-assay data integration (multi-omics methods)
 
-For a detailed schedule, see Section \@ref(program).
+For a detailed schedule, see Section \@ref(program). The course can be
+extended by an independent assignment (details will be agreed with the
+main teacher).
+
 
 ## How to apply
 
--   Send a brief motivation letter to Anna Kaisanlahti [anna.kaisanlahti\@oulu.fi](mailto:anna.kaisanlahti@oulu.fi){.email}
--   Applications sent before May 15 will be given priority. The course has maximum capacity of 20 participants. 
+-   Send a brief motivation letter to Anna Kaisanlahti
+-   [anna.kaisanlahti\@oulu.fi](mailto:anna.kaisanlahti@oulu.fi){.email}
+-   Applications from local students, and applications sent before May
+-   15 will be given priority. The course has maximum capacity of 20
+-   participants.
 
 
 ## Teachers and organizers
 
-**Teachers** [Leo Lahti](https://datascience.utu.fi) is the main teacher and Associate Professor in Data Science at the University of Turku. Course assistants are PhD researchers *Tuomas Borman* (Turku), and *Anna Kaisanlahti* (Oulu) from the group of the course coordinator Docent *Justus Reunanen*. The course is jointly organized by [Health and Biosciences Doctoral Programme (HBS-DP)](https://www.oulu.fi/en/research/graduate-school/organisation-and-contact-information-uniogs/health-and-biosciences-doctoral-programme) University of Oulu Graduate School, Research Unit of Translational Medicine, University of Oulu, and the Department of Computing, University of Turku, Finland. The [Finnish IT Center for Science (CSC)](https://csc.fi/) supports the course by providing cloud computing services.
-
+**Teachers** [Leo Lahti](https://datascience.utu.fi) is the main teacher and Associate Professor in Data Science at the University of Turku. Dr. Pande Erawijantari is a co-teacher. Course assistants are *Tuomas Borman* (Turku), *Giulio Benedetti* (Turku), and *Anna Kaisanlahti* (Oulu). Docent *Justus Reunanen* is the course coordinator. The course is organized by [Health and Biosciences Doctoral Programme (HBS-DP)](https://www.oulu.fi/en/research/graduate-school/organisation-and-contact-information-uniogs/health-and-biosciences-doctoral-programme) University of Oulu Graduate School, Research Unit of Translational Medicine, University of Oulu. The [Finnish IT Center for Science (CSC)](https://csc.fi/) supports the course by providing cloud computing services.
 
 
 ## Acknowledgments
