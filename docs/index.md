@@ -1,7 +1,7 @@
 --- 
 title: "Multi-omic data analysis with R/Bioconductor"
 subtitle: "Oulu Summer School, June 2023"
-date: "2023-04-17"
+date: "2023-04-19"
 site: bookdown::bookdown_site
 documentclass: book
 bibliography: [packages.bib]
@@ -71,11 +71,9 @@ main teacher).
 
 ## How to apply
 
--   Send a brief motivation letter to Anna Kaisanlahti
--   [anna.kaisanlahti\@oulu.fi](mailto:anna.kaisanlahti@oulu.fi){.email}
--   Applications from local students, and applications sent before May
--   15 will be given priority. The course has maximum capacity of 20
--   participants.
+- Send a brief motivation letter to Anna Kaisanlahti [anna.kaisanlahti\@oulu.fi](mailto:anna.kaisanlahti@oulu.fi){.email}
+- Applications from local students, and applications sent before May 15 will be given priority
+- The course has maximum capacity of 20 participants.
 
 
 ## Teachers and organizers
