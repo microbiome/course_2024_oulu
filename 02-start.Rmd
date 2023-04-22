@@ -56,7 +56,7 @@ course but it can be useful for later use. The required software:
 
 ## Support and resources
 
- * We recommend to have a look at the additional reading tips and try out online material listed in Section \@ref(material).
+ * We recommend to have a look at the additional reading tips and try out online material listed in Section (material chapter).
 
 **You can run the workflows by simply copy-pasting the examples.** For
 further, advanced material, you can test and modify further examples
