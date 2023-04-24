@@ -1,23 +1,22 @@
-# Reproducible reporting with Rmarkdown
+# Reproducible reporting with Quarto
 
 Reproducible reporting is the starting point for robust interactive
 data science. Perform the following tasks:
 
- * If you are entirely new to Markdown, take
-   [this](https://www.markdowntutorial.com/) 10 minute tutorial to get
-   introduced to the most important functions within Markdown. Then
+ * If you are entirely new to Quarto, take
+   [this short tutorial](https://quarto.org/docs/get-started/) to get
+   introduced to the most important functions within Quarto Then
    experiment with different options with
-   [Rmarkdown](https://www.rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf)
+   [Quarto](https://res.cloudinary.com/dyd911kmh/image/upload/v1676540721/Marketing/Blog/Quarto_Cheat_Sheet.pdf).
 
- * Create a Rmarkdown template in RStudio, and render it into a
+ * Create a Quarto template in RStudio, and render it into a
    document (markdown, PDF, docx or other format). In case you are new
-   to Rmarkdown [Rstudio provides
-   resources](https://rmarkdown.rstudio.com/lesson-1.html) to learn
+   to Quarto, its [documentation provides
+   resources](https://quarto.org/docs/guide/) to learn
    about the use cases and the basics of Rmarkdown.
 
- * Further examples are tips for Rmarkdown are available in the
-   online tutorial to reproducible reporting by [Dr. C Titus
-   Brown](https://rpubs.com/marschmi/RMarkdown).
+ * Further examples are tips for Quarto are available in [this online tutorial](https://appsilon.com/r-quarto-tutorial/)
+   to interactive reproducible reporting.
 
 
 
