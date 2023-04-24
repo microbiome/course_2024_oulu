@@ -12,7 +12,7 @@ rmd_files:
   #- 01.1-codeofconduct.Rmd
   - 02-start.Rmd
   - 03-reproduciblereporting.Rmd
-  #- 04-material.Rmd
+  - 04-material.Rmd
 
   #- 04-import.Rmd
   #- 05-explore.Rmd
