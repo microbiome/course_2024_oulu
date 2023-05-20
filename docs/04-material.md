@@ -11,13 +11,11 @@ already before the course.
 
 ## Lecture slides
 
-[Slides](https://github.com/microbiome/course_2023_oulu/tree/main/slides) 
+Course slides will be shared at a later point.
 
 ## Tasks
 
-[Exercises](https://microbiome.github.io/OMA/exercises.html)
-
-[Example solutions](https://github.com/microbiome/course_2023_oulu/blob/main/example_solutions.Rmd)
+Course assignments will be available soon.
 
 
 ## Extra material on miaverse and R programming
