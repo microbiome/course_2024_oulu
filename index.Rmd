@@ -81,6 +81,18 @@ main teacher).
 **Teachers** [Leo Lahti](https://datascience.utu.fi) is the main teacher and Associate Professor in Data Science at the University of Turku. Dr. Pande Erawijantari is a co-teacher. Course assistants are *Tuomas Borman* (Turku), *Giulio Benedetti* (Turku), and *Anna Kaisanlahti* (Oulu). Docent *Justus Reunanen* is the course coordinator. The course is organized by [Health and Biosciences Doctoral Programme (HBS-DP)](https://www.oulu.fi/en/research/graduate-school/organisation-and-contact-information-uniogs/health-and-biosciences-doctoral-programme) University of Oulu Graduate School, Research Unit of Translational Medicine, University of Oulu. The [Finnish IT Center for Science (CSC)](https://csc.fi/) supports the course by providing cloud computing services.
 
 
+## Code of Conduct
+
+The Bioconductor community values an open approach to science that promotes the
+
+ - sharing of ideas, code, software and expertise
+ - collaboration
+ - diversity and inclusivity
+ - a kind and welcoming environment
+ - community contributions
+ 
+More details on its enforcement are available [here](https://bioconductor.github.io/bioc_coc_multilingual/).
+
 ## Acknowledgments
 
 **Citation** We thank all [developers and contributors](https://microbiome.github.io) who have contributed open resources that supported the development of the training material. Kindly cite the course material as @miacourse 

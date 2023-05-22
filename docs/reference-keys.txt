@@ -3,6 +3,7 @@ contents-and-learning-goals
 schedule
 how-to-apply
 teachers-and-organizers
+code-of-conduct
 acknowledgments
 program
 day-1---open-data-science
@@ -15,8 +16,11 @@ your-own-computer
 support-and-resources
 packages
 reproducible-reporting-with-quarto
+learn-quarto
+additional-material-on-rmarkdown
 material
 online-tutorial
 lecture-slides
 tasks
+hintikkaxo-dataset
 extra-material-on-miaverse-and-r-programming

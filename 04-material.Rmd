@@ -1,37 +1,35 @@
 # Study material {#material}
 
+
 ## Online tutorial
 
-The course will utilize material from the online book (beta version)
-[Orchestrating Microbiome Analysis with R/Bioconductor (OMA)](https://microbiome.github.io/OMA/).
+The course will utilize material from the online book
+[Orchestrating Microbiome Analysis with R/Bioconductor (OMA)](https://microbiome.github.io/OMA/), currently in its beta version.
 
-We encourage to familiarize with the material and test examples
-already before the course.
+We encourage to familiarize with the content of the book and try some examples
+already before the course starts.
 
 
 ## Lecture slides
 
 Course slides will be shared at a later point.
 
+
+
 ## Tasks
 
 Course assignments will be available soon.
 
 
+## HintikkaXO dataset
+
+In this course we will analyze
+[HintikkaXOData](https://microbiome.github.io/microbiomeDataSets/reference/HintikkaXOData.html),
+a study about the effects of fat diet and prebiotics on the microbiome of rat models [@ijerph18084049].
+
+The dataset is briefly presented by [these slides]().
+
+
 ## Extra material on miaverse and R programming
 
-[Resources](https://microbiome.github.io/OMA/resources.html)
-
-In this course, we will analyze [HintikkaXOData](https://rdrr.io/github/microbiome/microbiomeDataSets/man/HintikkaXOData.html).
-In this rat study, it was analyzed whether fats and prebiotics affects the microbiome. 
-
-The data consist of 4 groups:
-
-    - High-fat diet without prebiotics
-    - High-fat diet with prebiotics
-    - Low-fat diet without prebiotics
-    - Low-fat diet with prebiotics
-
-You can find the data from [here](https://github.com/microbiome/course_2023_oulu/tree/main/data).
-    
-    
+Extra material on miaverse and R programming is available in the [resources](https://microbiome.github.io/OMA/resources.html) of the OMA book.

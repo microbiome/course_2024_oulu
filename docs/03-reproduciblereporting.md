@@ -1,5 +1,7 @@
 # Reproducible reporting with Quarto
 
+## Learn Quarto
+
 Reproducible reporting is the starting point for robust interactive
 data science. Perform the following tasks:
 
@@ -18,5 +20,12 @@ data science. Perform the following tasks:
  * Further examples are tips for Quarto are available in [this online tutorial](https://appsilon.com/r-quarto-tutorial/)
    to interactive reproducible reporting.
 
+## Additional material on Rmarkdown
 
+Being able to use Quarto in R partly relies on your previous knowledge of Rmarkdown. The following resources can help you get familiar with Rmarkdown:
+
+ * [online tutorial](https://www.markdowntutorial.com/)
+ * [cheatsheet](https://www.rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf)
+ * [documentation](https://rmarkdown.rstudio.com/lesson-1.html)
+ * [Dr. C Titus Brown's tutorial](https://rpubs.com/marschmi/RMarkdown)
 
