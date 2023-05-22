@@ -15,21 +15,8 @@ already before the course starts.
 Course slides will be shared at a later point.
 
 
-
-## Tasks
-
-Course assignments will be available soon.
-
-
 ## HintikkaXO dataset
 
 In this course we will analyze
 [HintikkaXOData](https://microbiome.github.io/microbiomeDataSets/reference/HintikkaXOData.html),
-a study about the effects of fat diet and prebiotics on the microbiome of rat models [@ijerph18084049].
-
-The dataset is briefly presented by [these slides]().
-
-
-## Extra material on miaverse and R programming
-
-Extra material on miaverse and R programming is available in the [resources](https://microbiome.github.io/OMA/resources.html) of the OMA book.
+a study about the effects of fat diet and prebiotics on the microbiome of rat models [@ijerph18084049]. The dataset is briefly presented in [these slides]().

@@ -33,11 +33,12 @@ geometry:
 ::: {.grid}
 
 ::: {.g-col-8}
-**Contents and learning goals** This course provides an introduction to multi-omic data integration and analysis with R/Bioconductor, a popular open source environment for scientific data analysis. After the course you will know how to organize multiple data sources into a coherent framework, implement reproducible data science workflows, and approach common data analysis tasks by utilizing available documentation and R tools. The primary focus is on microbiome research but the covered data science methods are generally applicable and we will discuss links with other application domains such as transcriptomics, metabolomics, and single cell sequencing. 
+**Contents and learning goals**: This course provides an introduction to multi-omic data integration and analysis with R/Bioconductor, a popular open source environment for scientific data analysis. After the course you will know how to organize multiple data sources into a coherent framework, implement reproducible data science workflows, and approach common data analysis tasks by utilizing available documentation and R tools. The primary focus is on microbiome research but the covered data science methods are generally applicable and we will discuss links with other application domains such as transcriptomics, metabolomics, and single cell sequencing. 
 
-**Target audience** MSc students, PhD, postdoctoral, and other researchers who wish to learn new skills in statistical programming and data analysis. Academic students and researchers from Finland and abroad are welcome and encouraged to apply.
+**Target audience**: MSc students, PhD, postdoctoral, and other researchers who wish to learn new skills in statistical programming and data analysis. Academic students and researchers from Finland and abroad are welcome and encouraged to apply.
 
-**Teaching material** We will follow open online documentation created by the course teachers, Orchestrating Microbiome Analysis [https://microbiome.github.io/OMA](https://microbiome.github.io/OMA). The training material walks you through the standard steps of omics data analysis covering data access, exploration, analysis, visualization, and reproducible workflows. Preparatory material and video clips, and online support are available before the course. All teaching material will be shared openly.
+**Teaching material**: We will follow open online documentation created by the course teachers, primarily the [Orchestrating Microbiome Analysis](https://microbiome.github.io/OMA)
+(OMA) book. The training material walks you through the standard steps of omics data analysis covering data access, exploration, analysis, visualization, and reproducible workflows. Preparatory material and video clips, and online support are available before the course. All teaching material will be shared openly.
 :::
 
 ::: {.g-col-3}
@@ -51,14 +52,14 @@ geometry:
 
 The course is organized in a live format. Preparatory material and video clips, and online support are available before the course. All teaching material will be shared openly.
 
-**Venue** University of Oulu. June 19-21, 2023 (Mon-Wed). The course is organized in a live format. 
+**Venue**: University of Oulu. June 19-21, 2023 (Mon-Wed). The course is organized in a live format. 
 
-**Costs** no registration fee. Participants are expected to cover
-  their own travel and accommodation
+**Costs**: There is no registration fee for the course. Participants are expected to cover
+  their own travel and accommodation.
 
-**Accommodation** tips: <https://visitoulu.fi/en/arrival-overnight/>
+**Accommodation**: Housing tips can be found at <https://visitoulu.fi/en/arrival-overnight/>.
 
-**Schedule** Contact teaching daily between 9am -- 4pm, including lectures, demonstrations, hands-on sessions, and breaks. 
+**Schedule**: Contact teaching daily between 9am -- 4pm, including lectures, demonstrations, hands-on sessions, and breaks. 
 
  * Day 1 Reproducible workflows with R/Bioconductor and Quarto 
  * Day 2 Tabular data analysis (working with single 'omics) 
@@ -78,7 +79,7 @@ main teacher).
 
 ## Teachers and organizers
 
-**Teachers** [Leo Lahti](https://datascience.utu.fi) is the main teacher and Associate Professor in Data Science at the University of Turku. Dr. Pande Erawijantari is a co-teacher. Course assistants are *Tuomas Borman* (Turku), *Giulio Benedetti* (Turku), and *Anna Kaisanlahti* (Oulu). Docent *Justus Reunanen* is the course coordinator. The course is organized by [Health and Biosciences Doctoral Programme (HBS-DP)](https://www.oulu.fi/en/research/graduate-school/organisation-and-contact-information-uniogs/health-and-biosciences-doctoral-programme) University of Oulu Graduate School, Research Unit of Translational Medicine, University of Oulu. The [Finnish IT Center for Science (CSC)](https://csc.fi/) supports the course by providing cloud computing services.
+**Teachers**: [Leo Lahti](https://datascience.utu.fi) is the main teacher and Associate Professor in Data Science at the University of Turku. Dr. Pande Erawijantari is a co-teacher. Course assistants are *Tuomas Borman* (Turku), *Giulio Benedetti* (Turku), and *Anna Kaisanlahti* (Oulu). Docent *Justus Reunanen* is the course coordinator. The course is organized by [Health and Biosciences Doctoral Programme (HBS-DP)](https://www.oulu.fi/en/research/graduate-school/organisation-and-contact-information-uniogs/health-and-biosciences-doctoral-programme) University of Oulu Graduate School, Research Unit of Translational Medicine, University of Oulu. The [Finnish IT Center for Science (CSC)](https://csc.fi/) supports the course by providing cloud computing services.
 
 
 ## Code of Conduct
@@ -95,13 +96,13 @@ More details on its enforcement are available [here](https://bioconductor.github
 
 ## Acknowledgments
 
-**Citation** We thank all [developers and contributors](https://microbiome.github.io) who have contributed open resources that supported the development of the training material. Kindly cite the course material as @miacourse 
+**Citation**: We thank all [developers and contributors](https://microbiome.github.io) who have contributed open resources that supported the development of the training material. Kindly cite the course material as @miacourse.
 
-**Contact** See [https://microbiome.github.io](https://microbiome.github.io)
+**Contact**: Refer to [https://microbiome.github.io](https://microbiome.github.io).
 
-**License and source code**
+**License and source code**:
 
-All material is released under the open [CC BY-NC-SA 3.0 License](LICENSE) and available online during and after the course, following the [recommendations on open teaching materials](https://avointiede.fi/fi/linjaukset-ja-aineistot/kotimaiset-linjaukset/oppimisen-ja-oppimateriaalien-avoimuuden-linjaus) of the national open science coordination in Finland**.
+All material is released under the open [CC BY-NC-SA 3.0 License](LICENSE) and available online during and after the course, following the [recommendations on open teaching materials](https://avointiede.fi/fi/linjaukset-ja-aineistot/kotimaiset-linjaukset/oppimisen-ja-oppimateriaalien-avoimuuden-linjaus) of the national open science coordination in Finland.
 
 The source code of this repository is reproducible and contains
 the Rmd files with executable code. All files can be rendered at one
