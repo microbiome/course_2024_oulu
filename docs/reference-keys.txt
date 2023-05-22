@@ -22,4 +22,5 @@ material
 online-tutorial
 lecture-slides
 tasks
+hintikkaxo-dataset
 extra-material-on-miaverse-and-r-programming
