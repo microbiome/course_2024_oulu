@@ -1,0 +1,210 @@
+---
+title: "A brief introduction to HintikkaXOData"
+format: revealjs
+editor: visual
+smaller: true
+---
+
+```{r}
+#| label: setup
+#| include: false
+library(mia)
+library(scater)
+library(patchwork)
+library(dplyr)
+data("HintikkaXOData", package = "mia")
+```
+
+## Study design
+
+. . .
+
+HintikkaXOData is a MultiAssayExperiment containing microbiome, metabolome and biomarker data from a study on the effects of diet and prebiotics on fatty-liver disease in rats.
+
+```{r}
+mae <- HintikkaXOData
+experiments(HintikkaXOData)
+```
+
+. . .
+
+The rat population (N = 40) was divided into 4 groups (n = 10), which underwent different diets over a period of 12 weeks. The 4 groups included:
+
+::: columns
+::: {.column width="55%"}
+-   high-fat diet without prebiotics
+
+-   high-fat diet with prebiotics
+
+-   low-fat diet without prebiotics
+
+-   low-fat diet with prebiotics
+:::
+
+::: {.column width="45%"}
+```{r}
+#| label: tab-pop
+tab <- table(colData(mae)$Fat, colData(mae)$XOS)
+rownames(tab) <- c("Low Fat", "High Fat")
+colnames(tab) <- c("XOS+", "XOS-")
+knitr::kable(tab)
+```
+:::
+:::
+
+::: footer
+XOS: xylooligosaccharide
+:::
+
+## Microbiota
+
+. . .
+
+Microbiome data was obtained by 16S rRNA gene sequencing of bacterial DNA sampled from the cecum of terminated rats. Then, sequence reads were assembled into operational taxonomic units (OTUs).
+
+. . .
+
+::: columns
+::: {.column width="45%"}
+```{r}
+microbiota <- experiments(mae)[["microbiota"]]
+colData(microbiota)$Diet <- mae$Diet
+colData(microbiota)$Site <- mae$Site
+
+microbiota <- transformCounts(microbiota,
+                              method = "relabundance")
+
+microbiota <- agglomerateByRank(microbiota,
+                                rank = "Genus")
+```
+
+```{r}
+#| label: tab-top
+tse <- agglomerateByRank(microbiota, rank = "Phylum")
+top_tab <- rowMeans(assay(tse, "relabundance")[getTopTaxa(tse), ])
+names(top_tab) <- gsub("D_1__", "", names(top_tab))
+knitr::kable(top_tab,
+             col.names = "Relative Abundance (%)")
+```
+:::
+
+::: {.column width="55%"}
+```{r}
+microbiota <- mia::estimateDiversity(microbiota,
+                                     assay_name = "counts",
+                                     index = "shannon")
+```
+
+```{r}
+#| label: prep-alpha
+p1 <- plotColData(microbiota, "shannon", "Diet", colour_by = "Site") +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
+  labs(y = "Shannon Diversity") +
+  expand_limits(y = c(2, 4))
+```
+
+```{r}
+microbiota <- runMDS(microbiota,
+                     FUN = vegan::vegdist,
+                     method = "bray",
+                     name = "PCoA_BC",
+                     exprs_values = "relabundance")
+```
+
+```{r}
+#| label: prep-beta
+p2 <- plotReducedDim(microbiota, "PCoA_BC", colour_by = "Diet")
+
+e <- attr(reducedDim(microbiota, "PCoA_BC"), "eig");
+rel_eig <- e / sum(e[e > 0])          
+p2 <- p2 + labs(x = paste("PCoA 1 (", round(100 * rel_eig[[1]], 1), "%", ")", sep = ""),
+                y = paste("PCoA 2 (", round(100 * rel_eig[[2]], 1), "%", ")", sep = ""))
+```
+
+```{r}
+#| label: fig-diversity
+#| fig-height: 9
+(p1 / p2) +
+  plot_layout(heights = c(2, 3))
+  
+```
+:::
+:::
+
+## Metabolites
+
+Metabolome data was obtained from the same cecal samples by nuclear magnetic resonance (NMR) spectroscopy. There is a total of 38 features, corresponding to the different metabolites.
+
+```{r}
+metabolites <- experiments(mae)[["metabolites"]]
+```
+
+. . .
+
+```{r}
+colData(metabolites)$Diet <- mae$Diet
+melted_metabolites <- meltAssay(metabolites, "nmr",
+                                add_col_data = TRUE)
+
+sub_met <- melted_metabolites %>% group_by(FeatureID) %>% summarise(med = median(nmr)) %>% filter(med >= 1)
+```
+
+```{r}
+p <- ggplot(melted_metabolites, aes(x = nmr, y = FeatureID)) +
+  geom_boxplot(outlier.shape = NA) +
+  geom_jitter(data = subset(melted_metabolites, FeatureID %in% sub_met$FeatureID), size = 1, aes(colour = Diet)) +
+  theme_classic() +
+  labs(x = "NMR peak") +
+  theme(axis.title.y = element_blank())
+
+p
+```
+
+## Biomarkers
+
+. . .
+
+Biomarkers data were obtained by Western blot from protein homogenates of rat tissues. There is a total of 39 features, corresponding to the biomarkers/site combinations.
+
+```{r}
+biomarkers <- experiments(mae)[["biomarkers"]]
+```
+
+. . .
+
+::: columns
+::: {.column width="55%"}
+```{r}
+df1 <- data.frame(Biomarker = c("CS", "AST", "ALT", "ERK", "IRS1",
+                                "AKT", "IL1b", "HAD", "CD45"),
+                  Function = c("citrate synthase",
+                               "aspartate aminotransferase",
+                               "alanine aminotransferase",
+                               "extracellular signal-regulated kinase",
+                               "insulin receptor substrate 1",
+                               "protein kinase B",
+                               "interleukin 1 beta",
+                               "3-hydroxyacyl-CoA dehydrogenase 8",
+                               "protein tyrosine phosphatase"))
+
+knitr::kable(df1)
+```
+:::
+
+::: {.column width="45%"}
+```{r}
+df2 <- data.frame(Name = c("epi", "SCfat", "mese","liver", "gastro",
+                           "serum"),
+                  Site = c("epididymal adipose tissue",
+                           "mesenteric adopose tissue",
+                           "subcutaneous adipose tissue",
+                           "liver",
+                           "gastrocnemius muscle",
+                           "serum"))
+
+knitr::kable(df2)
+```
+:::
+:::
+
+# The end

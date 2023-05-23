@@ -3,11 +3,9 @@
 
 ## Online tutorial
 
-The course will utilize material from the online book
-[Orchestrating Microbiome Analysis with R/Bioconductor (OMA)](https://microbiome.github.io/OMA/), currently in its beta version.
-
-We encourage to familiarize with the content of the book and try some examples
-already before the course starts.
+The course will utilize material from the [OMA](https://microbiome.github.io/OMA/)
+book, currently in its beta version. We encourage to familiarize with the content
+of the book and try some examples already before the course starts.
 
 
 ## Lecture slides
