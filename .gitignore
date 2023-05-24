@@ -31,3 +31,5 @@ vignettes/*.pdf
 # R Environment Variables
 .Renviron
 oulu2022_material.rds
+.DS_Store
+*/.DS_Store
