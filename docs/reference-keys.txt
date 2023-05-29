@@ -12,9 +12,6 @@ day-3---multi-assay-data-integration
 start
 csc-notebook
 local-environment-setup
-reproducible-reporting-with-quarto
-learn-quarto
-additional-material-on-rmarkdown
 material
 online-tutorial
 lecture-slides

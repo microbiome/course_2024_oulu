@@ -5,7 +5,9 @@
 
 The course will utilize material from the [OMA](https://microbiome.github.io/OMA/)
 book, currently in its beta version. We encourage to familiarize with the content
-of the book and try some examples already before the course starts.
+of the book and try some examples already before the course starts. If you would
+like to improve your skills in Quarto and Rmarkdown, you can refer to
+[these resources](https://microbiome.github.io/OMA/resources.html#quarto).
 
 
 ## Lecture slides
@@ -18,4 +20,4 @@ Course slides will be shared at a later point.
 In this course we will analyze
 [HintikkaXOData](https://microbiome.github.io/microbiomeDataSets/reference/HintikkaXOData.html),
 a study about the effects of fat diet and prebiotics on the microbiome of rat models [@ijerph18084049]. The dataset is briefly presented in
-[these slides](https://riborings.github.io/RiboPresentation/).
+[these slides](https://microbiome.github.io/outreach/hintikkaxo_presentation.html).
