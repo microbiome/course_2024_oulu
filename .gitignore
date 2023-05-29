@@ -30,6 +30,6 @@ vignettes/*.pdf
 *.knit.md
 # R Environment Variables
 .Renviron
-oulu2022_material.rds
+oulu2023_material.rds
 .DS_Store
 */.DS_Store
