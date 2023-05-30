@@ -1,7 +1,7 @@
 --- 
 title: "Multi-omic data analysis with R/Bioconductor"
 subtitle: "Oulu Summer School, June 2023"
-date: "2023-05-29"
+date: "2023-05-30"
 site: bookdown::bookdown_site
 documentclass: book
 bibliography: [packages.bib]

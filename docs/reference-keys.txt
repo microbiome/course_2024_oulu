@@ -15,4 +15,3 @@ local-environment-setup
 material
 online-tutorial
 lecture-slides
-hintikkaxo-dataset
