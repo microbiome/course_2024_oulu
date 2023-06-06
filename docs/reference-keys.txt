@@ -16,8 +16,8 @@ public-transport
 electric-boards-and-bikes
 accommodation
 start
-csc-notebook
-local-environment-setup
+checklist
 material
-online-tutorial
-lecture-slides
+renv
+your-own-computer
+csc-notebook
