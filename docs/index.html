@@ -4,25 +4,25 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Multi-omic data analysis with R/Bioconductor</title>
+  <title>Multi-omic data science with R/Bioconductor</title>
   <meta name="description" content="Course material" />
-  <meta name="generator" content="bookdown 0.33 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.34 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Multi-omic data analysis with R/Bioconductor" />
+  <meta property="og:title" content="Multi-omic data science with R/Bioconductor" />
   <meta property="og:type" content="book" />
   
   <meta property="og:description" content="Course material" />
   <meta name="github-repo" content="microbiome/course_2023_oulu" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Multi-omic data analysis with R/Bioconductor" />
+  <meta name="twitter:title" content="Multi-omic data science with R/Bioconductor" />
   
   <meta name="twitter:description" content="Course material" />
   
 
 
 
-<meta name="date" content="2023-05-31" />
+<meta name="date" content="2023-06-06" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -48,6 +48,7 @@
 
 
 
+<script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
 <link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
 <link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
 <script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
@@ -55,26 +56,8 @@
 
 
 <style type="text/css">
-/* Used with Pandoc 2.11+ new --citeproc when CSL is used */
-div.csl-bib-body { }
-div.csl-entry {
-  clear: both;
-}
-.hanging div.csl-entry {
-  margin-left:2em;
-  text-indent:-2em;
-}
-div.csl-left-margin {
-  min-width:2em;
-  float:left;
-}
-div.csl-right-inline {
-  margin-left:2em;
-  padding-left:1em;
-}
-div.csl-indent {
-  margin-left: 2em;
-}
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 </style>
 
 <link rel="stylesheet" href="style.css" type="text/css" />
@@ -118,13 +101,13 @@ div.csl-indent {
 </ul></li>
 <li class="chapter" data-level="4" data-path="start.html"><a href="start.html"><i class="fa fa-check"></i><b>4</b> Getting started</a>
 <ul>
-<li class="chapter" data-level="4.1" data-path="start.html"><a href="start.html#csc-notebook"><i class="fa fa-check"></i><b>4.1</b> CSC Notebook</a></li>
-<li class="chapter" data-level="4.2" data-path="start.html"><a href="start.html#local-environment-setup"><i class="fa fa-check"></i><b>4.2</b> Local environment setup</a></li>
-</ul></li>
-<li class="chapter" data-level="5" data-path="material.html"><a href="material.html"><i class="fa fa-check"></i><b>5</b> Study material</a>
+<li class="chapter" data-level="4.1" data-path="start.html"><a href="start.html#checklist"><i class="fa fa-check"></i><b>4.1</b> Checklist</a></li>
+<li class="chapter" data-level="4.2" data-path="start.html"><a href="start.html#material"><i class="fa fa-check"></i><b>4.2</b> Study material</a></li>
+<li class="chapter" data-level="4.3" data-path="start.html"><a href="start.html#renv"><i class="fa fa-check"></i><b>4.3</b> Setting up R environment</a>
 <ul>
-<li class="chapter" data-level="5.1" data-path="material.html"><a href="material.html#online-tutorial"><i class="fa fa-check"></i><b>5.1</b> Online tutorial</a></li>
-<li class="chapter" data-level="5.2" data-path="material.html"><a href="material.html#lecture-slides"><i class="fa fa-check"></i><b>5.2</b> Lecture slides</a></li>
+<li class="chapter" data-level="4.3.1" data-path="start.html"><a href="start.html#your-own-computer"><i class="fa fa-check"></i><b>4.3.1</b> Your own computer</a></li>
+<li class="chapter" data-level="4.3.2" data-path="start.html"><a href="start.html#csc-notebook"><i class="fa fa-check"></i><b>4.3.2</b> CSC Notebook</a></li>
+</ul></li>
 </ul></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
@@ -138,7 +121,7 @@ div.csl-indent {
       <div class="body-inner">
         <div class="book-header" role="navigation">
           <h1>
-            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Multi-omic data analysis with R/Bioconductor</a>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Multi-omic data science with R/Bioconductor</a>
           </h1>
         </div>
 
@@ -147,9 +130,9 @@ div.csl-indent {
 
             <section class="normal" id="section-">
 <div id="header">
-<h1 class="title">Multi-omic data analysis with R/Bioconductor</h1>
+<h1 class="title">Multi-omic data science with R/Bioconductor</h1>
 <h2 class="subtitle"><em>Oulu Summer School, June 2023</em></h2>
-<p class="date"><em>2023-05-31</em></p>
+<p class="date"><em>2023-06-06</em></p>
 </div>
 <div id="overview" class="section level1 hasAnchor" number="1">
 <h1><span class="header-section-number">1</span> Overview<a href="index.html#overview" class="anchor-section" aria-label="Anchor link to header"></a></h1>
@@ -165,9 +148,9 @@ div.csl-indent {
 (OMA) book. The training material walks you through the standard steps of omics data analysis covering data access, exploration, analysis, visualization, and reproducible workflows. Preparatory material and video clips, and online support are available before the course. All teaching material will be shared openly.</p>
 </div>
 <div class="g-col-3">
-<div class="float">
-<img src="fig.png" fig-align="center" width="300" alt="Figure source: Moreno-Indias et al. (2021) Frontiers in Microbiology 12:11." />
-<div class="figcaption">Figure source: Moreno-Indias <em>et al</em>. (2021) <em>Frontiers in Microbiology</em> 12:11.</div>
+<div class="figure">
+<img src="fig.png" fig-align="center" width="300" alt="" />
+<p class="caption">Figure source: Moreno-Indias <em>et al</em>. (2021) <em>Frontiers in Microbiology</em> 12:11.</p>
 </div>
 </div>
 </div>
@@ -215,7 +198,7 @@ main teacher).</p>
 </div>
 <div id="acknowledgments" class="section level2 hasAnchor" number="1.6">
 <h2><span class="header-section-number">1.6</span> Acknowledgments<a href="index.html#acknowledgments" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p><strong>Citation</strong>: We thank all <a href="https://microbiome.github.io">developers and contributors</a> who have contributed open resources that supported the development of the training material. Kindly cite the course material as <span class="citation">Tuomas Borman and Leo Lahti (<a href="#ref-miacourse">2023</a>)</span>.</p>
+<p><strong>Citation</strong>: We thank all <a href="https://microbiome.github.io">developers and contributors</a> who have contributed open resources that supported the development of the training material. Kindly cite the course material as <span class="citation">Tuomas Borman and Leo Lahti (<a href="#ref-miacourse" role="doc-biblioref">2023</a>)</span>.</p>
 <p><strong>Contact</strong>: Refer to <a href="https://microbiome.github.io">https://microbiome.github.io</a>.</p>
 <p><strong>License and source code</strong>:</p>
 <p>All material is released under the open <a href="LICENSE">CC BY-NC-SA 3.0 License</a> and available online during and after the course, following the <a href="https://avointiede.fi/fi/linjaukset-ja-aineistot/kotimaiset-linjaukset/oppimisen-ja-oppimateriaalien-avoimuuden-linjaus">recommendations on open teaching materials</a> of the national open science coordination in Finland.</p>
@@ -232,9 +215,9 @@ although this is not necessary for the training.</p>
 </div>
 </div>
 <h3>References</h3>
-<div id="refs" class="references csl-bib-body hanging-indent">
-<div id="ref-miacourse" class="csl-entry">
-Tuomas Borman, and Leo Lahti. 2023. <em>Multi-Omic Data Science with r/Bioconductor</em>. <a href="https://microbiome.github.io">microbiome.github.io</a>.
+<div id="refs" class="references hanging-indent">
+<div id="ref-miacourse">
+<p>Tuomas Borman, and Leo Lahti. 2023. <em>Multi-Omic Data Science with R/Bioconductor</em>. <a href="microbiome.github.io">microbiome.github.io</a>.</p>
 </div>
 </div>
             </section>

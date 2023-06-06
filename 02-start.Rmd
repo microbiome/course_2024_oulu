@@ -1,9 +1,54 @@
 # Getting started {#start}
 
 
-## CSC Notebook
+## Checklist
 
-We will provide a temporary access to a cloud computing environment
+ * Test your login to the CSC R environment (and optionally, set up your own R); see below for details
+
+ * Watch [short online videos](https://www.youtube.com/playlist?list=PLjiXAZO27elAJEptP59BN3whVJ61XIkST) on microbiome data science with R/Bioconductor.
+
+ * Try out [reproducible reporting Quarto](https://microbiome.github.io/OMA/resources.html#quarto)
+
+ * Read about the selected demo data: [HintikkaXOData](https://microbiome.github.io/OMA/containers.html#hintikka-desc). You can also try to load it in R and explore the data structure.
+
+ * Online support: for installation and other issues, join us at [Gitter](https://gitter.im/microbiome/miaverse?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge).
+
+
+
+## Study material {#material}
+
+The course will use material from
+[OMA](https://microbiome.github.io/OMA/) online book, which is
+currently in its beta version. We encourage to familiarize with the
+content of the book and try some examples already before the course
+starts but this is optional.
+
+A more extensive checklist for getting started is
+[available](https://microbiome.github.io/OMA/training.html#checklist),
+and the slides and other teaching material will be shared at a later
+point through
+[OMA](https://microbiome.github.io/OMA/training.html#material).
+
+
+## Setting up R environment {#renv}
+
+### Your own computer
+
+Setting up your own computer and using local R installation will allow
+you to continue using the same tools after the course. In order to do
+this, you can follow the [OMA setup checklist](https://microbiome.github.io/OMA/training.html#training).
+
+The course organizers can provide limited online support for installations via [Gitter](https://microbiome.github.io/OMA/training.html#support-and-resources). However, installation is more demanding in some systems.
+
+We also provide the CSC notebook for the course (see below); this
+comes with all necessary R packages and data pre-installed for ease of
+use.
+
+
+
+### CSC Notebook
+
+We provide a temporary access to a cloud computing environment
 that readily contains the available software packages. Instructions to access 
 the environment will be sent to the registered participants. 
 
@@ -35,10 +80,3 @@ the environment will be sent to the registered participants.
 6. You can save files to **my-work** directory. They are kept stored even when the session is closed. **shared** folder is shared with all participants.
 
     
-## Local environment setup
-
-The CSC notebook environment is developed for the present course, so it comes
-with all necessary R packages and data pre-installed for ease of use. However,
-in case you prefer to work on your local RStudio, you can follow this
-[setup checklist](https://microbiome.github.io/OMA/training.html#training)
-provided in the OMA book, along with all its additional links and tips.

@@ -1,5 +1,5 @@
 --- 
-title: "Multi-omic data analysis with R/Bioconductor"
+title: "Multi-omic data science with R/Bioconductor"
 subtitle: "Oulu Summer School, June 2023"
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
