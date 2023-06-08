@@ -18,6 +18,7 @@ accommodation
 start
 checklist
 material
+reading
 renv
 your-own-computer
 csc-notebook

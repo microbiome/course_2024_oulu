@@ -7,6 +7,8 @@
 
  * Watch [short online videos](https://www.youtube.com/playlist?list=PLjiXAZO27elAJEptP59BN3whVJ61XIkST) on microbiome data science with R/Bioconductor.
 
+ * Optionally: Read through the manuscripts in the reading tips (listed below).
+
  * Try out [reproducible reporting Quarto](https://microbiome.github.io/OMA/resources.html#quarto)
 
  * Read about the selected demo data: [HintikkaXOData](https://microbiome.github.io/OMA/containers.html#hintikka-desc). You can also try to load it in R and explore the data structure.
@@ -28,6 +30,17 @@ A more extensive checklist for getting started is
 and the slides and other teaching material will be shared at a later
 point through
 [OMA](https://microbiome.github.io/OMA/training.html#material).
+
+
+### Reading tips {#reading}
+
+We suggest to read the following manuscripts in order to familiarize with some of the general concepts and approaches discussed at the course.
+
+[Software for the Integration of Multiomics Experiments in Bioconductor](https://aacrjournals.org/cancerres/article/77/21/e39/662607/Software-for-the-Integration-of-Multiomics). Ramos et al. Cancer Res. (2017).
+
+[Orchestrating single-cell analysis with Bioconductor](https://doi.org/10.1038/s41592-019-0654-x). Amezquita, R.A., Lun, A.T.L., Becht, E. et al. Nat Methods 17, 137–145 (2020). 
+
+[Bioconductor Workflow for Microbiome Data Analysis: from raw reads to community analyses](https://f1000research.com/articles/5-1492/v2). Callahan et al. (2016). F1000Res; 5: 1492.
 
 
 ## Setting up R environment {#renv}
