@@ -1,0 +1,130 @@
+---
+title: "SummarizedExperiment"
+format: revealjs
+editor: visual
+---
+
+
+# Data wrangling: *SummarizedExperiment*
+
+## *SummarizedExperiment*
+
+![](images/paste-AA8BAE15.png)
+
+## Basic data operations
+
+-   Extracting elements
+
+-   Subsetting
+
+-   Components
+
+-\> See the example solutions.
+
+
+## Example: colData
+
+```{r}
+#| echo: true
+# Load mia R package
+library(mia)
+
+# Load example data 
+data(HintikkaXOData)
+mae <- HintikkaXOData
+tse <- mae[["microbiota"]]
+
+# Check column data for this data object
+colData(tse)
+```
+
+## Example: rowData
+
+```{r}
+#| echo: true
+# Check column data for this data object
+rowData(tse)
+```
+
+
+## Transformations
+
+-   Presence/absence
+-   Compositional (percentages)
+-   $Log_{10}$
+-   CLR and other *Aitchison* transformations
+-   Phylogenetic transformations (e.g. philr)
+-   Custom transformations
+
+
+
+## Example: assays
+
+```{r}
+#| echo: true
+# Check column data for this data object
+assay(tse)
+```
+
+
+
+## Task: explore the data
+
+**Use OMA to find out how to pick up the following from your example data, and explain what each of these elements represents.**
+
+-   colData
+
+-   rowData
+
+-   assays
+
+
+## Further tasks
+
+- Adding elements to rowData / colData
+
+- Adding new assays & extracting assays
+
+- Visualizing the data
+
+- Constructing TreeSE
+
+- Other [OMA Exercises](https://microbiome.github.io/OMA/exercises.html) on **data containers**.
+
+
+## Overview so far
+
+By now, you are supposed to be able to:
+
+-   understand the basic structure of the TreeSE data container
+
+-   extract specific components from the object (assays, sample & feature info, trees)
+
+**-\> How to manipulate & operate with this data object?**
+
+
+## Workflow {.smaller}
+
+Data containers support collaborative development of analysis methods & workflows
+
+![Domenick Braccia, EuroBioc 2020 (microbiome.github.io)](images/paste-5203C683.png)
+
+
+
+
+
+<!--
+## Visualizing the data
+
+```{r}
+#| echo: false
+#tse <- scater::runMDS(tse, name="PCoA", 
+#  assay.type="counts", FUN = vegan::vegdist, method = "bray")
+#
+#scater::plotReducedDim(tse, "PCoA")
+#boxplot(assay(tse, "counts")[1,] ~ colData(tse)$Geographical_location
+#, 
+#  colour_by="Geographical_location")   
+```
+-->
+

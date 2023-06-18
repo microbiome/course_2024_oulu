@@ -1,0 +1,60 @@
+---
+title: "Learning environment & data sets"
+format: revealjs
+editor: visual
+---
+
+## Checklist
+
+From [course website](https://microbiome.github.io/course_2023_oulu/start.html)
+
+-   Test login to CSC cloud (optionally, set up your own R)
+
+-   Watch [short online videos](https://www.youtube.com/playlist?list=PLjiXAZO27elAJEptP59BN3whVJ61XIkST) on microbiome data science
+
+-   Try out reproducible reporting with [Quarto](https://microbiome.github.io/OMA/resources.html#quarto)
+
+-   Read about the selected demo data: [HintikkaXOData](https://microbiome.github.io/OMA/containers.html#hintikka-desc). You can also try to load it in R and explore the data structure.
+
+-   Optionally: Read through reading tips ([OMA](https://microbiome.github.io/OMA) & [manuscripts](https://microbiome.github.io/course_2023_oulu/start.html#reading))
+
+-   Online support: for installation and other issues, join us at [Gitter](https://microbiome.github.io/OMA/training.html#support-and-resources).
+
+## Software & learning environment (GB)
+
+-   **Pre-installed system** Temporary access to the notebook cloud environment provided by CSC with preinstalled software.
+
+-   **Your own system** encouraged to test the installation on your own system; limited support for this will be available.
+
+
+
+## CSC cloud notebook
+
+-   Login with CSC/Haka or Guest account
+
+-   Preinstalled R packages
+
+-   8 Gb memory
+
+-   8 hour uptime at one go
+
+-   Shared data workspace
+
+![](images/paste-8E75CB83.png){width="71"}
+
+
+
+## Demo & task: introduction to teaching environment (GB) {.smaller}
+
+1. Open the course website
+2. Show instructions
+3. Show the front page
+4. Explain login options (personal or guest account)
+5. Join workspace with the join code (Workspace means this course)
+6. Open new session
+7. Session lifetime: need to open new session every day (to save computer resources)
+8. Rstudio intro (if necessary)
+9. Using folders
+10. my-work will be there as long as workspace is there (half year)
+11. You can download those by e.g. copy-pasting, or exportin the file
+12. Saving workspace to your directory (optional)

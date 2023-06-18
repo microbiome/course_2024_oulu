@@ -1,0 +1,115 @@
+---
+title: "Reproducible data science workflow"
+format: revealjs
+editor: visual
+---
+
+
+
+
+## Reproducible notebooks
+
+-   We use [Quarto](https://quarto.org/docs/authoring/markdown-basics.html) for reproducible documentation.
+
+-   Next generation development of Rmarkdown
+
+-   Largely compatible with Rmarkdown
+
+-   Supported by RStudio
+
+Basic knowledge is already assumed; the preliminary material included a link to Rmarkdown & Quarto tutorial videos.
+
+
+## Literate programming
+
+Programming paradigm introduced by Donald Knuth (1984) in which a computer program is given as an explanation of its logic in a natural language, embedded with code chunks, from which compilable source code can be generated.\
+(Adapted from *Wikipedia*)
+
+![](images/Literate_Programming_book_cover.jpg){width="100"}
+
+
+## Literate programming
+
+-   Used in scientific computing and in data science for reproducible research and open access purposes.
+
+-   Literate programming tools are used by millions of programmers today.
+
+## Quarto
+
+Next generation Rmarkdown
+
+Quarto enables you to weave together content and executable code into a finished presentation. To learn more about Quarto presentations see <https://quarto.org/docs/presentations/>.
+
+
+## Quarto demo (GB)
+
+Let us first demonstrate Quarto.
+
+1. Open new Quarto file
+2. Combine text, images, code
+3. You can render it easily to create a report
+4. Basic commands
+5. Chunk, options (it is like R file with text option)
+6. Good practice is to comment your code (you know what you have done, purpose, someone else knows, transparency, you can use it later easily, someone else can improve and find bug)
+7. Online support (gitter)
+
+
+
+## Task 1: Reproducible reporting {.smaller}
+
+Now, initialize, render & modify Quarto document yourself
+
+1.  Create Quarto file (Rstudio has ready-made template)
+
+2.  Add a **code chunk** and name it
+
+3.  Render the file into pdf or html format
+
+4.  Import e.g., iris dataset, and add a dotplot with a title.
+
+5.  Create another code chunk and plot.
+
+6.  Adjust figure size
+
+7.  Hide code chunk from the report (see [chunk options](https://quarto.org/docs/authoring/markdown-basics.html)).
+
+8.  Add some text
+
+9.  Add R command within the text
+
+10. Update HTML file from the qmd file & play around with the different options
+
+
+For more tips, see [Quarto tutorial](https://quarto.org/docs/authoring/markdown-basics.html)
+
+
+## Fast track
+
+- If you complete the task fast, spend a moment exploring further capabilities of [Quarto](https://quarto.org/docs/authoring/markdown-basics.html)
+
+- See [OMA Exercises](https://microbiome.github.io/OMA/exercises.html) for Quarto.
+
+
+
+## Troubleshooting
+
+
+
+## Coding tips
+
+-   **Comment the code** to explain what each line or lines of code do. This facilitates later understanding, reuse, and transparency.
+
+-   **Avoid hard-coding** define key variables in the beginning of the workflow. This will make it easier to modify parameters and reuse the code.
+
+-   **Summarize the main results** so that they can easily be understood by others without advanced data analytics knowledge.
+
+
+## Tips, tricks & hacks
+
+-   Quarto tips & tricks & hacks?
+
+-   Installing new packages
+
+-   importing new data sets to R for interactive data analysis: read.csv, read.biom etc. where to find examples (see OMA section on data import)
+
+

@@ -1,0 +1,121 @@
+---
+title: "Bioconductor"
+format: revealjs
+editor: visual
+---
+
+## 
+
+![](images/paste-1E7AEB60.png)
+
+## Data science workflow
+
+![R for Data Science / H. Wickham](images/paste-8AAEF32A.png){width="688"}
+
+![](images/paste-92ACC42B.png)
+
+## Data analysis package ecosystem
+
+![](images/paste-BA8F36BD.png)
+
+## Number of open analysis tools has increased exponentially
+
+![](images/paste-D7E05B23.png)
+
+## 
+
+### Package ecosystem: microbiome ecology![](images/paste-89E533F7.png){width="728"}
+
+##  {.smaller}
+
+![](images/paste-9E1A48AE.png){width="263"}
+
+Started in 2001 as a platform for microarray data analysis
+
+::: columns
+::: {.column width="40%"}
+Now 2140+ packages:
+
+\- Sequencing (DNA, RNA, ChIP, SC)
+
+\- Proteomics
+
+\- Metabolomics
+
+\- Multi-omics integration
+:::
+
+::: {.column width="60%"}
+![](images/paste-16A0BA51.png){width="306"}
+:::
+:::
+
+## 
+
+![](images/paste-9E1A48AE.png){width="263"}
+
+::: columns
+::: {.column width="50%"}
+#### Collaborative development
+
+\- 50,000+ papers in PubMed
+
+\- software & data repository
+
+\- tutorials & documentation
+
+\- bioinformatics peer support
+:::
+
+::: {.column width="50%"}
+![](images/paste-1BE39B3A.png){width="300"}
+:::
+:::
+
+## 
+
+![](images/paste-9E1A48AE.png){width="263"}
+
+::: columns
+::: {.column width="50%"}
+**Management**
+
+\- Core team
+
+\- SAB & TAB & CAB
+
+\- Global contributor base
+:::
+
+::: {.column width="50%"}
+![](images/paste-DB32EFB2.png){width="226"}
+
+![](images/paste-BB617EEC.png){width="130"}
+:::
+:::
+
+## Collaborative development
+
+![](images/paste-7A47899A.png)
+
+## Cultures of open collaboration
+
+![](images/paste-505993C5.png)
+
+## Open data science ecosystems
+
+![](images/paste-E23FCD8F.png)
+
+
+
+## R/Bioc community
+
+(Global) Bioconductor conference
+
+Asian Bioconductor conference
+
+European Bioconductor conference Gent, Sep 2023
+
+![](images/paste-424E5F35.png){width="327"}
+
+![](images/paste-5D1F38D5.png){width="212"}
