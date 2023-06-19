@@ -18,6 +18,8 @@ accommodation
 start
 checklist
 material
+lecture-slides
+day-1
 reading
 renv
 your-own-computer
