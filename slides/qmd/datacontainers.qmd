@@ -4,7 +4,6 @@ format: revealjs
 editor: visual
 ---
 
-
 ## Getting started
 
 -   CSC notebook access OK?
@@ -13,13 +12,11 @@ editor: visual
 
 <!--![](images/paste-D7CA373B.png){}-->
 
+## Data containers support collaborative workflow development
 
-## ![](images/paste-A1916129.png)
-
-![](images/paste-DB20F164.png)
+![](images/paste-DB20F164.png){width="485"}
 
 ![](images/paste-2562BFE6.png)
-
 
 ## Standardized data containers
 
@@ -27,27 +24,25 @@ Central for the R/Bioconductor ecosystem: *phyloseq, (Tree)SummarizedExperiment,
 
 ![](images/paste-E3B845C5.png){width="330"}
 
-
 ## Data containers
 
 ![](images/paste-5F140C1E.png)
 
+```{=html}
 <!--
 ## Data containers
 
 ![](images/paste-8E455D3E.png)
 
 -->
-
-
+```
 ## *phyloseq*: microbiome data container
 
-- The first microbome data container from around 2010.
+-   The first microbome data container from around 2010.
 
-- Has become standard for (16S) microbiome bioinformatics in R (J McMurdie, S Holmes et al.)
+-   Has become standard for (16S) microbiome bioinformatics in R (J McMurdie, S Holmes et al.)
 
 ![](images/paste-43F123A2.png)
-
 
 ## *TreeSummarizedExperiment*
 
@@ -57,12 +52,10 @@ Huang et al. F1000, 2021
 
 ![](images/paste-14DB8F76.png)
 
-
 ## Current framework
 
-- _(Tree)SummarizedExperiment_ for single omics
-- _MultiAssayExperiment_ for multi-omics
-
+-   *(Tree)SummarizedExperiment* for single omics
+-   *MultiAssayExperiment* for multi-omics
 
 ## Benefits
 
@@ -77,7 +70,6 @@ Huang et al. F1000, 2021
 -   Reproducibility
 
 -   Collaboration
-
 
 ##  {.smaller}
 
@@ -105,14 +97,9 @@ Huang et al. F1000, 2021
 
 ![](images/paste-AA8BAE15.png)
 
-
-
-
 ## Demo data
 
 Introduction of the afternoon assignment and data set: [HintikkaXOData](https://microbiome.github.io/OMA/containers.html#hintikka-desc)
-
-
 
 ## Task: load microbiome data
 
@@ -126,7 +113,6 @@ data(HintikkaXOData)
 
 Source: Hintikka et al. (2021). Xylo-oligosaccharides in prevention of hepatic steatosis and adipose tissue inflammation: Associating taxonomic and metabolomic patterns in fecal microbiomes with biclustering. *International Journal of Environmental Research and Public Health* 18(8) <https://doi.org/10.3390/ijerph18084049>
 
-
 ## Task: load microbiome data
 
 This is MultiAssayExperiment data object. Let us check what experiment it contains.
@@ -136,7 +122,6 @@ This is MultiAssayExperiment data object. Let us check what experiment it contai
 mae <- HintikkaXOData
 experiments(mae)
 ```
-
 
 ## Task: load microbiome data
 
@@ -148,26 +133,22 @@ tse <- mae[["microbiota"]]
 tse
 ```
 
-
-
 ## Open microbiome data resources
 
-Open microbiome data resources supporting  _TreeSummarizedExperiment_:
+Open microbiome data resources supporting *TreeSummarizedExperiment*:
 
 -   R package data ([mia](https://microbiome.github.io/mia/reference/index.html), [miaViz](https://microbiome.github.io/miaViz/reference/index.html), [miaTime](https://microbiome.github.io/miaTime/reference/index.html))
 -   Human studies: [curatedMetagenomicData](https://waldronlab.io/curatedMetagenomicData/articles/available-studies.html) (Pasolli *et al.* [Nat Meth 2017](https://doi.org/10.1038/nmeth.4468))
--  EBI MGnify: MGnifyR R package
+-   EBI MGnify: MGnifyR R package
 -   Other studies: [microbiomeDataSets](https://microbiome.github.io/microbiomeDataSets/index.html) (Lahti et al.)
 
 See also OMA chapter on available data sets
-
-
 
 ## Julia packages
 
 ![](images/paste-B31FD0DB.png){width="434"}
 
-
+```{=html}
 <!--
 
 ## Data demo
@@ -199,7 +180,4 @@ See also OMA chapter on available data sets
 -   Best practices in reproducible reporting and open science
 
 -->
-
-
-
-
+```

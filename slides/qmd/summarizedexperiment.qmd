@@ -4,7 +4,6 @@ format: revealjs
 editor: visual
 ---
 
-
 # Data wrangling: *SummarizedExperiment*
 
 ## *SummarizedExperiment*
@@ -20,7 +19,6 @@ editor: visual
 -   Components
 
 -\> See the example solutions.
-
 
 ## Example: colData
 
@@ -46,7 +44,6 @@ colData(tse)
 rowData(tse)
 ```
 
-
 ## Transformations
 
 -   Presence/absence
@@ -56,8 +53,6 @@ rowData(tse)
 -   Phylogenetic transformations (e.g. philr)
 -   Custom transformations
 
-
-
 ## Example: assays
 
 ```{r}
@@ -65,8 +60,6 @@ rowData(tse)
 # Check column data for this data object
 assay(tse)
 ```
-
-
 
 ## Task: explore the data
 
@@ -78,19 +71,25 @@ assay(tse)
 
 -   assays
 
+## Adding new assays & extracting assays
+
+-   Add log10 or CLR transformation for the data (hint: transformCounts)
+
+-   Visualize abundance of a selected feature w.r.t. sample metadata
+
+## Adding elements to colData
+
+-   Calculate Shannon diversity and add to colData (hint: estimateDiversity)
+
+-   Visualize diversity w.r.t. sample metadata
 
 ## Further tasks
 
-- Adding elements to rowData / colData
+-   Importing your own data
 
-- Adding new assays & extracting assays
+-   Constructing TreeSE from scracth
 
-- Visualizing the data
-
-- Constructing TreeSE
-
-- Other [OMA Exercises](https://microbiome.github.io/OMA/exercises.html) on **data containers**.
-
+-   Other [OMA Exercises](https://microbiome.github.io/OMA/exercises.html) on **data containers**.
 
 ## Overview so far
 
@@ -102,29 +101,4 @@ By now, you are supposed to be able to:
 
 **-\> How to manipulate & operate with this data object?**
 
-
-## Workflow {.smaller}
-
-Data containers support collaborative development of analysis methods & workflows
-
-![Domenick Braccia, EuroBioc 2020 (microbiome.github.io)](images/paste-5203C683.png)
-
-
-
-
-
-<!--
-## Visualizing the data
-
-```{r}
-#| echo: false
-#tse <- scater::runMDS(tse, name="PCoA", 
-#  assay.type="counts", FUN = vegan::vegdist, method = "bray")
-#
-#scater::plotReducedDim(tse, "PCoA")
-#boxplot(assay(tse, "counts")[1,] ~ colData(tse)$Geographical_location
-#, 
-#  colour_by="Geographical_location")   
-```
--->
-
+##  {.smaller}

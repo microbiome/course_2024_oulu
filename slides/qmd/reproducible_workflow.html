@@ -330,6 +330,7 @@
 <li><p>Supported by RStudio</p></li>
 </ul>
 <p>Basic knowledge is already assumed; the preliminary material included a link to Rmarkdown &amp; Quarto tutorial videos.</p>
+<p>Quarto enables you to weave together content and executable code into a finished presentation. To learn more about Quarto presentations see <a href="https://quarto.org/docs/presentations/" class="uri">https://quarto.org/docs/presentations/</a>.</p>
 </section>
 <section id="literate-programming" class="slide level2">
 <h2>Literate programming</h2>
@@ -344,11 +345,6 @@
 <li><p>Literate programming tools are used by millions of programmers today.</p></li>
 </ul>
 </section>
-<section id="quarto" class="slide level2">
-<h2>Quarto</h2>
-<p>Next generation Rmarkdown</p>
-<p>Quarto enables you to weave together content and executable code into a finished presentation. To learn more about Quarto presentations see <a href="https://quarto.org/docs/presentations/" class="uri">https://quarto.org/docs/presentations/</a>.</p>
-</section>
 <section id="quarto-demo-gb" class="slide level2">
 <h2>Quarto demo (GB)</h2>
 <p>Let us first demonstrate Quarto.</p>
@@ -359,8 +355,12 @@
 <li>Basic commands</li>
 <li>Chunk, options (it is like R file with text option)</li>
 <li>Good practice is to comment your code (you know what you have done, purpose, someone else knows, transparency, you can use it later easily, someone else can improve and find bug)</li>
-<li>Online support (gitter)</li>
 </ol>
+</section>
+<section id="quarto-exercise" class="slide level2">
+<h2>Quarto exercise</h2>
+<p>OMA Exercise:</p>
+<p>17.1.1 Reproducible reporting with Quarto</p>
 </section>
 <section id="task-1-reproducible-reporting" class="slide level2 smaller">
 <h2>Task 1: Reproducible reporting</h2>
@@ -386,9 +386,6 @@
 <li><p>See <a href="https://microbiome.github.io/OMA/exercises.html">OMA Exercises</a> for Quarto.</p></li>
 </ul>
 </section>
-<section id="troubleshooting" class="slide level2">
-<h2>Troubleshooting</h2>
-</section>
 <section id="coding-tips" class="slide level2">
 <h2>Coding tips</h2>
 <ul>
@@ -403,6 +400,53 @@
 <li><p>Quarto tips &amp; tricks &amp; hacks?</p></li>
 <li><p>Installing new packages</p></li>
 <li><p>importing new data sets to R for interactive data analysis: read.csv, read.biom etc. where to find examples (see OMA section on data import)</p></li>
+</ul>
+</section>
+<section id="exercises-17.3-prepare-the-data-in-quarto" class="slide level2">
+<h2>Exercises 17.3: prepare the data in Quarto</h2>
+<ul>
+<li><p>Load HintikkaXOData and extract the microbiota data element</p></li>
+<li><p>Add colData from mae to the microbiota experiment</p></li>
+<li><p>Extra: create the data from source files in the shared data folder (ask Giulio for support; OMA section 3.4).</p></li>
+</ul>
+</section>
+<section id="subsetting" class="slide level2">
+<h2>Subsetting</h2>
+<ul>
+<li><p>Show how to subset microbiota data (ex. 17.3.1)</p></li>
+<li><p><strong>Subset to the most prevalent taxa (17.3.3)</strong> (tip: subsetByPrevalentFeatures)</p>
+<ul>
+<li>for count assay; how many features remain?</li>
+<li>for relative abundance assay; how many features remain?</li>
+</ul></li>
+</ul>
+</section>
+<section id="agglomeration" class="slide level2">
+<h2>Agglomeration</h2>
+<p>Agglomerate the microbiota data to higher taxonomic levels:</p>
+<ul>
+<li>chapter 6.3</li>
+<li>agglomerateByRank</li>
+</ul>
+</section>
+<section id="extra-exercises-17.3" class="slide level2">
+<h2>Extra exercises 17.3</h2>
+<ul>
+<li>library sizes &amp; rarification (17.3.2)</li>
+</ul>
+</section>
+<section id="exercises-17.5.1-17.5.2-coldata-diversity" class="slide level2">
+<h2>Exercises 17.5.1-17.5.2: colData &amp; diversity</h2>
+<ul>
+<li>Add Shannon diversity in colData</li>
+<li>Visualize diversity differences between sample groups</li>
+</ul>
+</section>
+<section id="transformations" class="slide level2">
+<h2>Transformations</h2>
+<ul>
+<li>transform to alternative assays and show histograms for the whole assay</li>
+<li>transform to alternative assays; boxplots for selected feature</li>
 </ul>
 <div class="footer footer-default">
 

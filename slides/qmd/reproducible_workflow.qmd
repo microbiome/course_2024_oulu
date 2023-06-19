@@ -4,9 +4,6 @@ format: revealjs
 editor: visual
 ---
 
-
-
-
 ## Reproducible notebooks
 
 -   We use [Quarto](https://quarto.org/docs/authoring/markdown-basics.html) for reproducible documentation.
@@ -19,6 +16,8 @@ editor: visual
 
 Basic knowledge is already assumed; the preliminary material included a link to Rmarkdown & Quarto tutorial videos.
 
+Quarto enables you to weave together content and executable code into a finished presentation. To learn more about Quarto presentations see <https://quarto.org/docs/presentations/>.
+
 
 ## Literate programming
 
@@ -27,32 +26,29 @@ Programming paradigm introduced by Donald Knuth (1984) in which a computer progr
 
 ![](images/Literate_Programming_book_cover.jpg){width="100"}
 
-
 ## Literate programming
 
 -   Used in scientific computing and in data science for reproducible research and open access purposes.
 
 -   Literate programming tools are used by millions of programmers today.
 
-## Quarto
-
-Next generation Rmarkdown
-
-Quarto enables you to weave together content and executable code into a finished presentation. To learn more about Quarto presentations see <https://quarto.org/docs/presentations/>.
-
 
 ## Quarto demo (GB)
 
 Let us first demonstrate Quarto.
 
-1. Open new Quarto file
-2. Combine text, images, code
-3. You can render it easily to create a report
-4. Basic commands
-5. Chunk, options (it is like R file with text option)
-6. Good practice is to comment your code (you know what you have done, purpose, someone else knows, transparency, you can use it later easily, someone else can improve and find bug)
-7. Online support (gitter)
+1.  Open new Quarto file
+2.  Combine text, images, code
+3.  You can render it easily to create a report
+4.  Basic commands
+5.  Chunk, options (it is like R file with text option)
+6.  Good practice is to comment your code (you know what you have done, purpose, someone else knows, transparency, you can use it later easily, someone else can improve and find bug)
 
+## Quarto exercise
+
+OMA Exercise: 
+
+17.1.1 Reproducible reporting with Quarto
 
 
 ## Task 1: Reproducible reporting {.smaller}
@@ -79,21 +75,13 @@ Now, initialize, render & modify Quarto document yourself
 
 10. Update HTML file from the qmd file & play around with the different options
 
-
 For more tips, see [Quarto tutorial](https://quarto.org/docs/authoring/markdown-basics.html)
-
 
 ## Fast track
 
-- If you complete the task fast, spend a moment exploring further capabilities of [Quarto](https://quarto.org/docs/authoring/markdown-basics.html)
+-   If you complete the task fast, spend a moment exploring further capabilities of [Quarto](https://quarto.org/docs/authoring/markdown-basics.html)
 
-- See [OMA Exercises](https://microbiome.github.io/OMA/exercises.html) for Quarto.
-
-
-
-## Troubleshooting
-
-
+-   See [OMA Exercises](https://microbiome.github.io/OMA/exercises.html) for Quarto.
 
 ## Coding tips
 
@@ -103,7 +91,6 @@ For more tips, see [Quarto tutorial](https://quarto.org/docs/authoring/markdown-
 
 -   **Summarize the main results** so that they can easily be understood by others without advanced data analytics knowledge.
 
-
 ## Tips, tricks & hacks
 
 -   Quarto tips & tricks & hacks?
@@ -111,5 +98,51 @@ For more tips, see [Quarto tutorial](https://quarto.org/docs/authoring/markdown-
 -   Installing new packages
 
 -   importing new data sets to R for interactive data analysis: read.csv, read.biom etc. where to find examples (see OMA section on data import)
+
+
+
+## Exercises 17.3: prepare the data in Quarto
+
+- Load HintikkaXOData and extract the microbiota data element
+
+- Add colData from mae to the microbiota experiment
+
+- Extra: create the data from source files in the shared data folder (ask Giulio for support; OMA section 3.4).
+
+
+## Subsetting
+
+- Show how to subset microbiota data (ex. 17.3.1)
+
+- **Subset to the most prevalent taxa (17.3.3)** (tip: subsetByPrevalentFeatures)
+
+  - for count assay; how many features remain? 
+  - for relative abundance assay; how many features remain? 
+
+
+## Agglomeration
+
+Agglomerate the microbiota data to higher taxonomic levels:
+
+- chapter 6.3
+- agglomerateByRank
+
+
+## Extra exercises 17.3 
+
+- library sizes & rarification (17.3.2)
+
+
+## Exercises 17.5.1-17.5.2: colData & diversity
+
+- Add Shannon diversity in colData
+- Visualize diversity differences between sample groups
+
+
+
+## Transformations
+
+- transform to alternative assays and show histograms for the whole assay
+- transform to alternative assays; boxplots for selected feature
 
 
