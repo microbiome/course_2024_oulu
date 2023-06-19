@@ -22,7 +22,7 @@
 
 
 
-<meta name="date" content="2023-06-08" />
+<meta name="date" content="2023-06-19" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -48,7 +48,6 @@
 
 
 
-<script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
 <link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
 <link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
 <script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
@@ -58,6 +57,28 @@
 <style type="text/css">
   
   div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
+<style type="text/css">
+/* Used with Pandoc 2.11+ new --citeproc when CSL is used */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
 </style>
 
 <link rel="stylesheet" href="style.css" type="text/css" />
@@ -104,7 +125,8 @@
 <li class="chapter" data-level="4.1" data-path="start.html"><a href="start.html#checklist"><i class="fa fa-check"></i><b>4.1</b> Checklist</a></li>
 <li class="chapter" data-level="4.2" data-path="start.html"><a href="start.html#material"><i class="fa fa-check"></i><b>4.2</b> Study material</a>
 <ul>
-<li class="chapter" data-level="4.2.1" data-path="start.html"><a href="start.html#reading"><i class="fa fa-check"></i><b>4.2.1</b> Reading tips</a></li>
+<li class="chapter" data-level="4.2.1" data-path="start.html"><a href="start.html#lecture-slides"><i class="fa fa-check"></i><b>4.2.1</b> Lecture slides</a></li>
+<li class="chapter" data-level="4.2.2" data-path="start.html"><a href="start.html#reading"><i class="fa fa-check"></i><b>4.2.2</b> Reading tips</a></li>
 </ul></li>
 <li class="chapter" data-level="4.3" data-path="start.html"><a href="start.html#renv"><i class="fa fa-check"></i><b>4.3</b> Setting up R environment</a>
 <ul>
@@ -157,8 +179,22 @@ starts but this is optional.</p>
 and the slides and other teaching material will be shared at a later
 point through
 <a href="https://microbiome.github.io/OMA/training.html#material">OMA</a>.</p>
-<div id="reading" class="section level3 hasAnchor" number="4.2.1">
-<h3><span class="header-section-number">4.2.1</span> Reading tips<a href="start.html#reading" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="lecture-slides" class="section level3 hasAnchor" number="4.2.1">
+<h3><span class="header-section-number">4.2.1</span> Lecture slides<a href="start.html#lecture-slides" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="day-1" class="section level4 hasAnchor" number="4.2.1.1">
+<h4><span class="header-section-number">4.2.1.1</span> Day 1<a href="start.html#day-1" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<ul>
+<li><a href="https://microbiome.github.io/outreach/intro.html">Intro</a></li>
+<li><a href="https://microbiome.github.io/outreach/bioconductor.html">Bioconductor</a></li>
+<li><a href="https://microbiome.github.io/outreach/starting.html">Starting</a></li>
+<li><a href="https://microbiome.github.io/outreach/reproducible_workflow.html">Reproducible Workflow</a></li>
+<li><a href="https://microbiome.github.io/outreach/datacontainers.html">Data Containers</a></li>
+<li><a href="https://microbiome.github.io/outreach/summarizedexperiment.html">SummarizedExperiment Container</a></li>
+</ul>
+</div>
+</div>
+<div id="reading" class="section level3 hasAnchor" number="4.2.2">
+<h3><span class="header-section-number">4.2.2</span> Reading tips<a href="start.html#reading" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>We suggest to read the following manuscripts in order to familiarize with some of the general concepts and approaches discussed at the course.</p>
 <p><a href="https://aacrjournals.org/cancerres/article/77/21/e39/662607/Software-for-the-Integration-of-Multiomics">Software for the Integration of Multiomics Experiments in Bioconductor</a>. Ramos et al. Cancer Res. (2017).</p>
 <p><a href="https://doi.org/10.1038/s41592-019-0654-x">Orchestrating single-cell analysis with Bioconductor</a>. Amezquita, R.A., Lun, A.T.L., Becht, E. et al. Nat Methods 17, 137–145 (2020).</p>
@@ -229,9 +265,9 @@ the environment will be sent to the registered participants.</p>
 <li>You can save files to <strong>my-work</strong> directory. They are kept stored even when the session is closed. <strong>shared</strong> folder is shared with all participants.</li>
 </ol>
 
-<div id="refs" class="references hanging-indent">
-<div>
-<p>Tuomas Borman, and Leo Lahti. 2023. <em>Multi-Omic Data Science with R/Bioconductor</em>. <a href="microbiome.github.io">microbiome.github.io</a>.</p>
+<div id="refs" class="references csl-bib-body hanging-indent">
+<div class="csl-entry">
+Tuomas Borman, and Leo Lahti. 2023. <em>Multi-Omic Data Science with r/Bioconductor</em>. <a href="https://microbiome.github.io">microbiome.github.io</a>.
 </div>
 </div>
 </div>

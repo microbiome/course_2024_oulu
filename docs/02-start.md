@@ -31,6 +31,17 @@ and the slides and other teaching material will be shared at a later
 point through
 [OMA](https://microbiome.github.io/OMA/training.html#material).
 
+### Lecture slides
+
+#### Day 1
+
+- [Intro](https://microbiome.github.io/outreach/intro.html)
+- [Bioconductor](https://microbiome.github.io/outreach/bioconductor.html)
+- [Starting](https://microbiome.github.io/outreach/starting.html)
+- [Reproducible Workflow](https://microbiome.github.io/outreach/reproducible_workflow.html)
+- [Data Containers](https://microbiome.github.io/outreach/datacontainers.html)
+- [SummarizedExperiment Container](https://microbiome.github.io/outreach/summarizedexperiment.html)
+
 
 ### Reading tips {#reading}
 
