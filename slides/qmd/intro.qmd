@@ -14,9 +14,7 @@ editor: visual
 
 ![](images/bioconductor_logo_rgb.jpg){width="200"}
 
-## Organizers
-
-The course is jointly organized by
+## Organizers {.smaller}
 
 -   Health and Biosciences Doctoral Programme University of Oulu Graduate School
 -   Cancer & Translational Medicine Research Unit, University of Oulu
@@ -53,7 +51,7 @@ Finnish IT Center for Science (CSC) provides cloud computing services
 
 Department of Computing, Uni. Turku, Finland [datascience.utu.fi](datascience.utu.fi)  
 
-## Code of Conduct
+## Code of Conduct {.smaller}
 
 Bioconductor community values an open approach to science that promotes
 
@@ -81,7 +79,7 @@ For the full CoC, see: [https://bioconductor.github.io/bioc_coc_multilingual](ht
 
 -   [Participants & wishlists](https://tinyurl.com/oulubioc2023)
 
-## Learning goals
+## Learning goals  {.smaller}
 
 ::: columns
 ::: {.column width="70%"}
@@ -136,7 +134,8 @@ Primary focus: microbiome research; methods are generally applicable to transcri
 -   Post-it stickers
 -   Practical info at the [course website](https://microbiome.github.io/course_2023_oulu) <!--([gdoc](https://docs.google.com/document/d/1sS3nqe5l6UrzZqsTOuqHvS4OIpTvd7Thagt5aKSw7EI/edit))-->
 -   Online chat (Gitter) <https://gitter.im/microbiome/miaverse>
--   [Google Doc](https://docs.google.com/document/d/1sS3nqe5l6UrzZqsTOuqHvS4OIpTvd7Thagt5aKSw7EI/edit#) **Questions at the end of the gdoc are welcome**
+-   [Google Doc](https://docs.google.com/document/d/1CEQ2d5g-zMoANhtHGbcKbW4DhElovPHz6iChjSX6Md8/edit?usp=sharing) **Questions at the end of the gdoc are welcome**
+
 
 ![](images/paste-345FB942.png){width="282"}
 
@@ -169,11 +168,12 @@ Development work has received support from several sources.
 
 Broader context and practical skills on:
 
+-   **Open data science workflow**: setting up reproducible data science workflows with Quarto
+
 -   **Data containers**: understanding *SummarizedExperiment*
 
 -   **Basic data wrangling** (e.g. subsetting, aggregation)
 
--   **Open data science workflow**: setting up reproducible data science workflows with Quarto
 
 ## Questions?
 

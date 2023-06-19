@@ -26,8 +26,6 @@ From [course website](https://microbiome.github.io/course_2023_oulu/start.html)
 
 -   **Your own system** encouraged to test the installation on your own system; limited support for this will be available.
 
-
-
 ## CSC cloud notebook
 
 -   Login with CSC/Haka or Guest account
@@ -42,19 +40,17 @@ From [course website](https://microbiome.github.io/course_2023_oulu/start.html)
 
 ![](images/paste-8E75CB83.png){width="71"}
 
+## Teaching environment (GB) {.smaller}
 
-
-## Demo & task: introduction to teaching environment (GB) {.smaller}
-
-1. Open the course website
-2. Show instructions
-3. Show the front page
-4. Explain login options (personal or guest account)
-5. Join workspace with the join code (Workspace means this course)
-6. Open new session
-7. Session lifetime: need to open new session every day (to save computer resources)
-8. Rstudio intro (if necessary)
-9. Using folders
+1.  Open the course website
+2.  Show instructions
+3.  Show the front page
+4.  Explain login options (personal or guest account)
+5.  Join workspace with the join code (Workspace means this course)
+6.  Open new session
+7.  Session lifetime: need to open new session every day (to save computer resources)
+8.  Rstudio intro (if necessary)
+9.  Using folders
 10. my-work will be there as long as workspace is there (half year)
 11. You can download those by e.g. copy-pasting, or exportin the file
 12. Saving workspace to your directory (optional)
