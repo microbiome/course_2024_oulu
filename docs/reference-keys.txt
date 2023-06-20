@@ -20,6 +20,7 @@ checklist
 material
 lecture-slides
 day-1
+day-2
 reading
 renv
 your-own-computer
