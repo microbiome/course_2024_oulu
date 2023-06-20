@@ -42,6 +42,10 @@ point through
 - [Data Containers](https://microbiome.github.io/outreach/datacontainers.html)
 - [SummarizedExperiment Container](https://microbiome.github.io/outreach/summarizedexperiment.html)
 
+#### Day 2
+
+- [Main Slides](https://microbiome.github.io/outreach/day2.html)
+- [TreeSummarizedExperiment](https://microbiome.github.io/outreach/treese.html)
 
 ### Reading tips {#reading}
 
