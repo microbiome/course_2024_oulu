@@ -393,6 +393,24 @@ Splitting by:
 
 
 
+## Splits
+
+Split by colData variable:
+
+```{r}
+li <- splitOn(tse, "Fat")
+```
+
+
+Split by rowData variable:
+
+```{r}
+li <- splitOn(tse, "Phylum")
+```
+
+
+
+
 ## Taxonomic ranks & *altExp* {.smaller}
 
 The alternative experiments (*altExp*) mechanism allows us to include multiple abundance tables at different taxonomic levels.
