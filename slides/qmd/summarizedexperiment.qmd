@@ -4,7 +4,7 @@ format: revealjs
 editor: visual
 ---
 
-# Data wrangling: *SummarizedExperiment*
+# Data wrangling: *SummarizedExperiment* 
 
 ## *SummarizedExperiment*
 
@@ -71,6 +71,12 @@ assay(tse)
 
 -   assays
 
+## Subsetting
+
+-   subset data object for rows and columns?
+
+-   
+
 ## Adding new assays & extracting assays
 
 -   Add log10 or CLR transformation for the data (hint: transformCounts)
@@ -82,6 +88,10 @@ assay(tse)
 -   Calculate Shannon diversity and add to colData (hint: estimateDiversity)
 
 -   Visualize diversity w.r.t. sample metadata
+
+## Extra exercises 17.3
+
+-   library sizes & rarification (17.3.2)
 
 ## Further tasks
 

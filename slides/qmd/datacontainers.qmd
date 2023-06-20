@@ -133,17 +133,6 @@ tse <- mae[["microbiota"]]
 tse
 ```
 
-## Open microbiome data resources
-
-Open microbiome data resources supporting *TreeSummarizedExperiment*:
-
--   R package data ([mia](https://microbiome.github.io/mia/reference/index.html), [miaViz](https://microbiome.github.io/miaViz/reference/index.html), [miaTime](https://microbiome.github.io/miaTime/reference/index.html))
--   Human studies: [curatedMetagenomicData](https://waldronlab.io/curatedMetagenomicData/articles/available-studies.html) (Pasolli *et al.* [Nat Meth 2017](https://doi.org/10.1038/nmeth.4468))
--   EBI MGnify: MGnifyR R package
--   Other studies: [microbiomeDataSets](https://microbiome.github.io/microbiomeDataSets/index.html) (Lahti et al.)
-
-See also OMA chapter on available data sets
-
 ## Julia packages
 
 ![](images/paste-B31FD0DB.png){width="434"}

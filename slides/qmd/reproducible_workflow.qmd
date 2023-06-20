@@ -18,7 +18,6 @@ Basic knowledge is already assumed; the preliminary material included a link to 
 
 Quarto enables you to weave together content and executable code into a finished presentation. To learn more about Quarto presentations see <https://quarto.org/docs/presentations/>.
 
-
 ## Literate programming
 
 Programming paradigm introduced by Donald Knuth (1984) in which a computer program is given as an explanation of its logic in a natural language, embedded with code chunks, from which compilable source code can be generated.\
@@ -31,7 +30,6 @@ Programming paradigm introduced by Donald Knuth (1984) in which a computer progr
 -   Used in scientific computing and in data science for reproducible research and open access purposes.
 
 -   Literate programming tools are used by millions of programmers today.
-
 
 ## Quarto demo (GB)
 
@@ -46,10 +44,9 @@ Let us first demonstrate Quarto.
 
 ## Quarto exercise
 
-OMA Exercise: 
+OMA Exercise:
 
 17.1.1 Reproducible reporting with Quarto
-
 
 ## Task 1: Reproducible reporting {.smaller}
 
@@ -99,50 +96,24 @@ For more tips, see [Quarto tutorial](https://quarto.org/docs/authoring/markdown-
 
 -   importing new data sets to R for interactive data analysis: read.csv, read.biom etc. where to find examples (see OMA section on data import)
 
-
-
 ## Exercises 17.3: prepare the data in Quarto
 
-- Load HintikkaXOData and extract the microbiota data element
+-   Load HintikkaXOData and extract the microbiota data element
 
-- Add colData from mae to the microbiota experiment
+-   Add colData from mae to the microbiota experiment
 
-- Extra: create the data from source files in the shared data folder (ask Giulio for support; OMA section 3.4).
-
+-   Extra: create the data from source files in the shared data folder (ask Giulio for support; OMA section 3.4).
 
 ## Subsetting
 
-- Show how to subset microbiota data (ex. 17.3.1)
+-   Show how to subset microbiota data (ex. 17.3.1)
 
-- **Subset to the most prevalent taxa (17.3.3)** (tip: subsetByPrevalentFeatures)
+-   **Subset to the most prevalent taxa (17.3.3)** (tip: subsetByPrevalentFeatures)
 
-  - for count assay; how many features remain? 
-  - for relative abundance assay; how many features remain? 
-
-
-## Agglomeration
-
-Agglomerate the microbiota data to higher taxonomic levels:
-
-- chapter 6.3
-- agglomerateByRank
-
-
-## Extra exercises 17.3 
-
-- library sizes & rarification (17.3.2)
-
-
-## Exercises 17.5.1-17.5.2: colData & diversity
-
-- Add Shannon diversity in colData
-- Visualize diversity differences between sample groups
-
-
+    -   for count assay; how many features remain?
+    -   for relative abundance assay; how many features remain?
 
 ## Transformations
 
-- transform to alternative assays and show histograms for the whole assay
-- transform to alternative assays; boxplots for selected feature
-
-
+-   transform to alternative assays and show histograms for the whole assay
+-   transform to alternative assays; boxplots for selected feature
