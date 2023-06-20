@@ -1,0 +1,445 @@
+---
+title: "Tabular data analysis"
+author: "Leo Lahti"
+format: revealjs
+editor: visual
+execute: 
+  cache: true
+---
+
+
+## Recap of Day 1
+
+-   **Data**: *SummarizedExperiment*: rowData, colData, assays
+-   **Methods**: subsetting, transformations
+
+![](images/paste-AA8BAE15.png){width="402"}
+
+
+## Day 1: Basic data wrangling
+
+-   reproducible data science workflow
+-   data import
+-   data containers 
+-   data manipulation (subsetting, transformations)
+
+
+## Today's learning goals
+
+Expanding multi-assay analyses:   
+**TreeSummarizedExperiment**
+
+-   augmenting the data (add diversities)
+-   data agglomeration & *alternative experiments*
+-   tree information: *rowTree, colTree*
+
+## Today's program
+
+Morning: data wrangling
+
+Afternoon: data visualizations
+
+
+
+# Data enrichment
+
+## Visualizing colData
+
+Task: visualize the abundance of a specific microbial Species against the measurement Site
+
+
+## Alpha diversity task
+
+Use the available tools to assess and visualize alpha diversity, and augment colData
+
+-   Exercises 17.5.1-17.5.2
+-   Add Shannon diversity in colData
+-   Visualize diversity differences between sample groups
+
+## Alpha diversity & aging
+
+Healthy & normal obese subjects.
+
+![](images/paste-CC6290A9.png)
+
+## Alpha diversity and diet
+
+![](images/paste-C67E84BB.png)
+
+![](images/paste-85FC6DB9.png)
+
+## Alpha diversity
+
+-   How many types?
+
+-   Distribution of types?
+
+-   Dominance of types?
+
+![](images/paste-37918533.png)
+
+## Alpha diversity
+
+-   How many types?
+
+-   Distribution of types?
+
+-   Dominance of types?
+
+![](images/paste-D240B56A.png)
+
+## Alpha diversity indices {.smaller}
+
+**Richness**
+
+-   number of types
+
+-   Eetimates of true richness based on finite sample sizes (Howard Sanders 1968); see e.g. Chao1
+
+**Evenness**
+
+-   distribution of sizes (even or uneven?)
+
+**Diversity**
+
+-   Combining richness & evenness
+
+**Dominance**
+
+## Finite sampling
+
+![https://github.com/mblstamps/stamps2019/blob/master/STAMPS2019_overview_Pop.pdf](images/paste-178A9470.png){alt="https://github.com/mblstamps/stamps2019/blob/master/STAMPS2019_overview_Pop.pdf"}
+
+## 
+
+![](images/paste-B5BEB852.png)
+
+::: columns
+::: {.column width="70%"}
+![](images/paste-99C3A18C.png)
+:::
+
+::: {.column width="30%"}
+![](images/paste-E3910F24.png)
+:::
+:::
+
+## {.smaller}
+
+High-quality reference genomes are required for functional characterization and taxonomic assignment of the human gut microbiota.
+
+Unified Human Gastrointestinal Genome (UHGG):
+
+-   4,644 gut prokaryotes (\>70% lack cultured representatives)
+
+-   204,938 nonredundant genomes
+
+-   Encode \>170 million protein sequences, collated into Unified Human Gastrointestinal Protein (UHGP) catalog.
+
+UHGP more than doubles the number of gut proteins in comparison to those present in the Integrated Gene Catalog.
+
+-   40% of the UHGP lack functional annotations
+
+-   Intraspecies genomic variation analyses revealed a large reservoir of accessory genes and single-nucleotide variants, many of which are specific to individual human populations.
+
+The UHGG and UHGP collections enable studies linking genotypes to phenotypes in the human gut microbiome.
+
+## Estimating species content
+
+::: columns
+::: {.column width="50%"}
+![Copyright © Claudia Zirion, Diego Garfias, Vanessa Arellano, Aaron Jaime, Abel Lovaco, Daniel Díaz, Abraham Avelar, Nelly Sélem https://carpentries-incubator.github.io/metagenomics-workshop/)](images/paste-2AD9955A.png){alt="Copyright © Claudia Zirion, Diego Garfias, Vanessa Arellano, Aaron Jaime, Abel Lovaco, Daniel Díaz, Abraham Avelar, Nelly Sélem https://carpentries-incubator.github.io/metagenomics-workshop/)"}
+:::
+
+::: {.column width="50%"}
+::: rows
+::: {.row height="70%"}
+![](images/paste-67F9C0C6.png)
+:::
+
+::: {.row height="30%"}
+![](images/paste-B11EAEC2.png)
+:::
+:::
+:::
+:::
+
+## 
+
+::: columns
+::: {.column width="70%"}
+![](images/paste-965269D9.png)
+:::
+
+::: {.column width="30%"}
+![](images/paste-422AB61F.png)
+:::
+:::
+
+## 
+
+![](images/paste-863D0ABE.png)
+
+::: columns
+::: {.column width="80%"}
+![](images/paste-29F79604.png)
+:::
+
+::: {.column width="20%"}
+![](images/paste-FFF6AC22.png)
+:::
+:::
+
+
+
+## Common alpha diversity indices
+
+**Phylogenetically neutral diversities:**
+
+-   Richness (observed, Chao1, ACE)
+-   Evenness (Pielou's evenness)
+-   Diversity (inverse Simpson, Shannon)
+
+**Phylogeny-aware diversities:**
+
+-   Faith diversity index
+
+## Phylogenetic diversity indices
+
+![](images/paste-78D6AFB5.png)
+
+![](images/paste-DD6C75BB.png)
+
+## Inverse Simpson
+
+![](images/paste-1B870B03.png)
+
+How likely it is to pick two members of the same species at random?
+
+![](images/paste-37918533.png)
+
+## Inverse Simpson
+
+**Beware** the variants:
+
+-   Simpson ($\lambda$)
+
+-   reciprocal Simpson ($1-\lambda$)
+
+-   inverse Simpson ($\frac{1}{\lambda}$)
+
+## Shannon diversity
+
+Shannon Index:
+
+![](images/paste-9EC22D90.png)
+
+True Richness:
+
+![](images/paste-01CE5752.png)
+
+*True diversity, or the effective number of types, refers to the number of equally abundant types needed for the average proportional abundance of the types to equal what is observed in the dataset of interest.*
+
+## Evenness
+
+H / ln(S)
+
+-   H: Shannon diversity
+-   S: Species richness
+
+## Hill's Diversity as a unifying concept {.smaller}
+
+```{=tex}
+\begin{equation}
+^qD = (\sum_i^R p_i^q )^\frac{1}{1-q}
+\end{equation}
+```
+**Hill's alpha diversities**
+
+R: richness (number of distinct types)
+
+pi: proportion of type I
+
+Order of diversity:
+
+-   q = 0 : Species Richness
+-   q = 1 : Shannon diversity
+-   q = 2 : (Inverse) Simpson diversity
+-   q ≠ 1 : Renyi entropy
+
+## Hill's Diversity as a unifying concept
+
+::: columns
+::: {.column width="40%"}
+![](images/paste-BD993C0E.png)
+:::
+
+::: {.column width="60%"}
+**Hill's alpha diversities**
+
+-   Richness
+-   inverse Simpson
+-   Shannon
+:::
+:::
+
+
+
+
+
+# Data wrangling
+
+<!--
+## Overview so far
+
+By now, you are supposed to be able to:
+
+-   understand the basic structure of the TreeSE data container
+
+-   construct a new TreeSE object from scratch or from imported data
+
+-   extract specific components from the object (assays, sample & feature info, trees)
+
+-\> How to manipulate & operate with this data object?
+
+-->
+
+
+## Basic data operations
+
+-   Transform
+
+-   Subset
+
+-   Merge
+
+-   **Aggregate** 
+
+-   Split
+
+## Subsetting
+
+Load example data set:
+
+```{r}
+#| echo: true
+library(mia)
+data(GlobalPatterns)
+tse <- GlobalPatterns
+```
+
+Check dimension:
+
+```{r}
+#| echo: true
+dim(tse)
+```
+
+Check dimension for a subset:
+
+```{r}
+#| echo: true
+dim(tse[1:10, 1:3])
+```
+
+## Transformations
+
+-   Presence/absence
+-   Compositional (percentages)
+-   $Log_{10}$
+-   CLR and other *Aitchison* transformations
+-   Phylogenetic transformations (e.g. philr)
+-   Custom transformations
+
+## Transformations
+
+Task: Alternative assays
+
+-   visualize transformed data; histograms, boxplots
+-   compare different transformations (scatterplot?)
+
+
+
+## Agglomeration
+
+-   taxonomic units
+-   TreeSE objects
+
+## Agglomeration
+
+Agglomerate microbiota data to higher taxonomic levels:
+
+-   chapter 6.3
+-   agglomerateByRank
+-   compare diversity or prevalent features between levels
+
+
+## Alternative experiments
+
+Alternative assays vs. alternative experiments?
+
+-   Store agglomerated data: *altExp*
+-   Do all levels at once: *splitByRanks*
+
+
+
+
+## Splits
+
+Splitting by:
+
+-   taxonomic units
+-   sample or feature groups
+
+
+
+## Taxonomic ranks & *altExp* {.smaller}
+
+The alternative experiments (*altExp*) mechanism allows us to include multiple abundance tables at different taxonomic levels.
+
+|     Option | Rows (features) | Cols (samples) | Recommendation          |
+|-----------:|:----------------|:---------------|:------------------------|
+|     assays | match           | match          | Data transformations    |
+| **altExp** | free            | match          | Alternative experiments |
+| MultiAssay | free            | free (mapping) | Multi-omic experiments  |
+
+
+## Alternative experiments and assays?
+
+- Pick clr assay from Genus-level data table?
+- Compare Shannon diversity from Genus and Species levels?
+
+
+## TreeSummarizedExperiment
+
+Huang et al. F1000, 2021
+
+![](images/paste-14DB8F76.png)
+
+
+
+# Visualization
+
+## Ordination
+
+-   Visualize example data with PCoA using Bray-Curtis dissimilarity
+-   Visualize example data with PCA using Aitchison distance (CLR + Euclid)
+
+
+## Heatmaps
+
+- Visualize abundance variation for selected taxa on a heatmap
+
+
+## Trees
+
+- Visualize phylogenetic tree using the examples 
+
+
+
+
+
+
+
+
+
