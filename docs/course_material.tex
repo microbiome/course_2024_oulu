@@ -1,0 +1,518 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+  oneside]{book}
+\usepackage{amsmath,amssymb}
+\usepackage{lmodern}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\hypersetup{
+  pdftitle={Microbiome data science with R/Bioconductor},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+\urlstyle{same} % disable monospaced font for URLs
+\usepackage[top=30mm,left=15mm]{geometry}
+\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{5}
+\usepackage{booktabs}
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\usepackage[]{natbib}
+\bibliographystyle{apalike}
+
+\title{Microbiome data science with R/Bioconductor}
+\usepackage{etoolbox}
+\makeatletter
+\providecommand{\subtitle}[1]{% add subtitle to \maketitle
+  \apptocmd{\@title}{\par {\large #1 \par}}{}{}
+}
+\makeatother
+\subtitle{Oulu, June 2024}
+\author{}
+\date{\vspace{-2.5em}2024-10-20}
+
+\begin{document}
+\maketitle
+
+{
+\setcounter{tocdepth}{1}
+\tableofcontents
+}
+\hypertarget{overview}{%
+\chapter{Overview}\label{overview}}
+
+\hypertarget{contents-and-learning-goals}{%
+\section{Contents and learning goals}\label{contents-and-learning-goals}}
+
+\textbf{Contents and learning goals}: This course provides an introduction to microbiome data science with R/Bioconductor, a popular open source environment for scientific data analysis. A special emphasis is given to multi-omic data integration methods. After the course you will know how to organize multiple data sources into a coherent framework, implement reproducible data science workflows, and approach common data analysis tasks by utilizing available documentation and R tools. Whereas the primary focus is on microbiome research, the covered data science methods are generally applicable and we will discuss links with other application domains such as transcriptomics, metabolomics, and single cell sequencing.
+
+\textbf{Target audience}: MSc students, PhD, postdoctoral, and other researchers who wish to learn new skills in statistical programming and data analysis. Academic students and researchers from Finland and abroad are welcome and encouraged to apply.
+
+\textbf{Teaching material}: We will follow open online documentation created by the course teachers, primarily the \href{https://microbiome.github.io/OMA}{Orchestrating Microbiome Analysis} (OMA) book. The training material walks you through the standard steps of omics data analysis covering data access, exploration, analysis, visualization, and reproducible workflows. Preparatory material and video clips, and online support are available before the course. All teaching materials are shared openly.
+
+\begin{figure}
+\centering
+\includegraphics[width=3.125in,height=\textheight]{fig.png}
+\caption{Figure source: Moreno-Indias \emph{et al}. (2021) \emph{Frontiers in Microbiology} 12:11.}
+\end{figure}
+
+\hypertarget{schedule}{%
+\section{Schedule}\label{schedule}}
+
+\textbf{Venue}: University of Oulu. December 18-20, 2024 (Wed-Fri). The course is organized in a live format; no remote option available.
+
+\textbf{Costs}: Registration is free. Participants are expected to cover their own travel and accommodation.
+
+\textbf{Accommodation}: Housing tips can be found at \url{https://visitoulu.fi/en/arrival-overnight/}.
+
+\textbf{Schedule}: Contact teaching daily between 9am -- 5pm, including lectures, demos, practicals, and breaks. For a detailed schedule, see Section \ref{program}. The course can be extended by an independent assignment (details to be agreed with the main teacher).
+
+\hypertarget{how-to-apply}{%
+\section{How to apply}\label{how-to-apply}}
+
+\begin{itemize}
+\tightlist
+\item
+  Send a brief motivation letter to Anna Kaisanlahti \href{mailto:anna.kaisanlahti@oulu.fi}{\nolinkurl{anna.kaisanlahti@oulu.fi}}
+\item
+  Applications from local students, and applications sent before Nov 15 will be given priority
+\item
+  The course has maximum capacity of 20 participants.
+\end{itemize}
+
+\hypertarget{teachers-and-organizers}{%
+\section{Teachers and organizers}\label{teachers-and-organizers}}
+
+\textbf{Teachers}: \href{https://datascience.utu.fi}{Leo Lahti} is the main teacher and Professor in Data Science at the University of Turku, and a certified \href{https://carpentries.org}{Carpentries} Instructor. PhD researcher \emph{Tuomas Borman} is a co-teacher and main developer of the data science framework used in the course. \emph{Anna Kaisanlahti} (Oulu) is a course assistant, and Docent \emph{Justus Reunanen} is the course coordinator. The course is organized by \href{https://www.oulu.fi/en/research/graduate-school/organisation-and-contact-information-uniogs/health-and-biosciences-doctoral-programme}{Health and Biosciences Doctoral Programme (HBS-DP)} University of Oulu Graduate School, Research Unit of Translational Medicine, University of Oulu. We thank the \href{https://csc.fi/}{Finnish IT Center for Science (CSC)} supports the course by providing cloud computing services.
+
+This is a Bioconductor course \citet{Soneson2024} and we follow the best practices recommended by \href{https://carpentries.org}{Software carpentries}.
+
+\hypertarget{code-of-conduct}{%
+\section{Code of Conduct}\label{code-of-conduct}}
+
+The Bioconductor community values an open approach to science that promotes the
+
+\begin{itemize}
+\tightlist
+\item
+  sharing of ideas, code, software and expertise
+\item
+  open collaboration and community contributions
+\item
+  diversity and inclusivity
+\item
+  a kind and welcoming environment
+\end{itemize}
+
+More details on its enforcement are available \href{https://bioconductor.github.io/bioc_coc_multilingual/}{here}.
+
+\hypertarget{acknowledgments}{%
+\section{Acknowledgments}\label{acknowledgments}}
+
+\textbf{Citation}: We thank all \href{https://microbiome.github.io}{developers and contributors} who have contributed open resources that supported the development of the training material. Kindly cite the course material as \citet{miacourse}.
+
+\textbf{Contact}: Refer to \url{https://microbiome.github.io}.
+
+\textbf{License and source code}:
+
+All material is released under the open \href{LICENSE}{CC BY-NC-SA 3.0 License} and available online during and after the course, following the \href{https://avointiede.fi/fi/linjaukset-ja-aineistot/kotimaiset-linjaukset/oppimisen-ja-oppimateriaalien-avoimuuden-linjaus}{recommendations on open teaching materials} of the national open science coordination in Finland.
+
+\hypertarget{program}{%
+\chapter{Program}\label{program}}
+
+The course takes place daily from 9am -- 5pm (CEST), including coffee,
+lunch, and short breaks. Most of the time will be dedicated to
+practical exercises, complemented by short lectures and demos.
+
+We expect that participants will prepare for the course in advance.
+Instructions will be sent to the registered participants. Online
+support is available.
+
+The material follows open online book created by the course teachers,
+\href{https://microbiome.github.io/OMA}{Orchestrating Microbiome Analysis},
+which supports R/Bioconductor framework for multi-omic data
+integration and analysis.
+
+Figure source: Moreno-Indias \emph{et al}. (2021) \href{https://doi.org/10.3389/fmicb.2021.635781}{Statistical and Machine Learning Techniques in Human Microbiome Studies: Contemporary Challenges and Solutions}. Frontiers in Microbiology 12:11.
+
+\hypertarget{day-1---open-data-science}{%
+\section{Day 1 - Open data science}\label{day-1---open-data-science}}
+
+Reproducible workflows with R/Bioconductor and Quarto
+
+\textbf{Morning}
+
+10-11 Coffee, Welcome \& Practicalities
+
+11-12 Learning environment (CSC RStudio notebook and reproducible reporting with Quarto)
+
+12-13 Lunch break
+
+\textbf{Afternoon}
+
+13-14 Lecture: open data science
+
+14-16 Working with data containers and workflows
+
+16-17 Q \& A
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{day-2---tabular-data-analysis}{%
+\section{Day 2 - Tabular data analysis}\label{day-2---tabular-data-analysis}}
+
+\textbf{Morning}
+
+9-10 Lecture: analysis \& visualization of \emph{tabular data} (single omics)
+
+10-12 Data wrangling, exploration, and summaries
+
+12-13 Lunch break
+
+\textbf{Afternoon}
+
+13-14 Univariate data analysis and visualization
+
+14-16 Multivariate data analysis and visualization
+
+16-17 Q \& A
+
+\textbf{Evening}
+
+Course dinner (optional; own cost)
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{day-3---multi-assay-data-integration}{%
+\section{Day 3 - Multi-assay data integration}\label{day-3---multi-assay-data-integration}}
+
+\textbf{Morning}
+
+9-10 Lecture: analysis \& visualization of \emph{multi-assay data} (multi-omics)
+
+10-12 Multi-assay data analysis and visualization
+
+12-13 Lunch break
+
+\textbf{Afternoon}
+
+13-15: Advanced methods (e.g.~time series, machine learning, simulation)
+
+15-16: Summary and wrap-up
+
+16-17: Q \& A
+
+\hypertarget{venue}{%
+\chapter{Venue}\label{venue}}
+
+\hypertarget{tips-for-visiting-oulu}{%
+\section{Tips for visiting Oulu}\label{tips-for-visiting-oulu}}
+
+Tourist info/city website can be found \href{https://visitoulu.fi/en/}{here}.
+
+\hypertarget{arrival-to-oulu}{%
+\section{Arrival to Oulu}\label{arrival-to-oulu}}
+
+\textbf{Airplane}: Airport is located in Oulunsalo, approx. 15km distance away from
+Oulu city center and the course venue. From the airport it is possible to take
+a buss (lines 8 and 9) or taxi to Oulu.
+
+\textbf{Train}: Train station is located close to the city center (address:
+Rautatienkatu 11). The train operator, schedules and tickets are available
+through \href{https://www.vr.fi/en}{VR website}.
+
+\hypertarget{public-transport}{%
+\section{Public transport}\label{public-transport}}
+
+\begin{itemize}
+\tightlist
+\item
+  General information is available on the \href{https://www.ouka.fi/oulu/public-transport/}{ouka website}
+\item
+  \href{https://www.ouka.fi/oulu/public-transport/routes-and-timetables/}{Routes and timetables}
+\item
+  When traveling by bus you can buy your ticket directly from the bus via contactless payment with
+  debit/credit card, or in advance through either mobile ticket application or ticket machine:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \textbf{Contactless payment}. You can use your debit or credit card (Visa, Visa Electron, Mastercard and Eurocard) or mobile (Google Pay and Apple Pay) to pay for your fare. You can use contactless card or device to pay for your own travels only.
+  \item
+    \textbf{Mobile ticket} (application named Waltti Mobiili): Install Waltti Mobiili application and add your debit/credit card into it, make sure you have enabled online payments. Available payment methods include Visa, Visa Electron or Mastercard. You do not need to register to buy tickets. When you make your first purchase, choose region ''Oulu''. Show the ticket to the driver when you board.
+  \item
+    At the \textbf{Waltti ticket machines}, you can buy single tickets as well as add more value and seasons to your Waltti travel card. You can find a Waltti ticket machine in example at the following locations:
+
+    \begin{itemize}
+    \tightlist
+    \item
+      Valkea Shopping Centre, Kesäkatu (next to the ATM)
+    \item
+      OYS, N-entrance (formerly A3: 1) - photo
+    \item
+      Oulu Airport, Arrivals Hall (next to screens)
+    \end{itemize}
+  \end{itemize}
+\end{itemize}
+
+\hypertarget{electric-boards-and-bikes}{%
+\section{Electric boards and bikes}\label{electric-boards-and-bikes}}
+
+Below are listed companies offering electric boards and bikes in Oulu area with their websites with instructions for use and rental:
+
+\begin{itemize}
+\tightlist
+\item
+  \href{https://www.voiscooters.com/}{Voi}
+\item
+  \href{https://www.tier.app/en/}{Tier}
+\item
+  \href{https://www.li.me/}{Lime}
+\end{itemize}
+
+\hypertarget{accommodation}{%
+\section{Accommodation}\label{accommodation}}
+
+Hotel information in Oulu area can be found
+\href{https://visitoulu.fi/en/arrival-overnight/}{here}.
+
+Below suggestion for hotels in Oulu city centre (via booking.com):
+
+\begin{itemize}
+\tightlist
+\item
+  Best Western Hotel Apollo
+\item
+  De Gamlas Hem Hotel \& Restaurant
+\item
+  Forenom Aparthotel Oulu
+\item
+  Radisson Blu Hotel, Oulu
+\item
+  Scandic Oulu City
+\item
+  Original Sokos Hotel Arina Oulu
+\end{itemize}
+
+\hypertarget{start}{%
+\chapter{Getting started}\label{start}}
+
+\hypertarget{checklist}{%
+\section{Checklist}\label{checklist}}
+
+\begin{itemize}
+\item
+  Test your login to the CSC R environment (and optionally, set up your own R); see below for details
+\item
+  Watch \href{https://www.youtube.com/playlist?list=PLjiXAZO27elAJEptP59BN3whVJ61XIkST}{short online videos} on microbiome data science with R/Bioconductor.
+\item
+  Test \href{https://microbiome.github.io/OMA/resources.html\#quarto}{reproducible reporting Quarto}
+\item
+  Read about the selected demo data: \href{https://microbiome.github.io/OMA/containers.html\#hintikka-desc}{HintikkaXOData}. You can also try to load it in R and explore the data structure.
+\item
+  Online support: for installation and other issues, join us at \href{https://gitter.im/microbiome/miaverse?utm_source=badge\&utm_medium=badge\&utm_campaign=pr-badge\&utm_content=badge}{Gitter}.
+\item
+  Optionally: check the reading tips below
+\end{itemize}
+
+\hypertarget{material}{%
+\section{Study material}\label{material}}
+
+The course will use material from
+\href{https://microbiome.github.io/OMA/}{OMA} online book, which is
+currently in its beta version. We encourage to familiarize with the
+content of the book and try some examples already before the course
+starts but this is optional.
+
+\hypertarget{lecture-slides}{%
+\subsection{Lecture slides}\label{lecture-slides}}
+
+The slides and other teaching material will be shared at a later
+point through
+\href{https://microbiome.github.io/OMA/training.html\#material}{OMA}.
+
+\hypertarget{basics-of-rbioconductor}{%
+\subsection{Basics of R/Bioconductor}\label{basics-of-rbioconductor}}
+
+We expect that participants have previous experience with R/Bioconductor. To refresh your R/Bioconductor skills, you can check additional study material in \href{https://microbiome.github.io/OMA/docs/devel/pages/training.html}{OMA}
+
+\hypertarget{renv}{%
+\section{Setting up R environment}\label{renv}}
+
+\hypertarget{your-own-computer}{%
+\subsection{Your own computer}\label{your-own-computer}}
+
+Setting up your own computer and using local R installation will allow
+you to continue using the same tools after the course. In order to do
+this, you can follow the \href{https://microbiome.github.io/OMA/training.html\#training}{OMA setup checklist}.
+
+The course organizers can provide limited online support for installations via \href{https://microbiome.github.io/OMA/training.html\#support-and-resources}{Gitter}. However, installation is more demanding in some systems.
+
+We also provide the CSC notebook for the course (see below); this
+comes with all necessary R packages and data pre-installed for ease of
+use.
+
+\hypertarget{csc-notebook}{%
+\subsection{CSC Notebook}\label{csc-notebook}}
+
+We provide a temporary access to a cloud computing environment
+that readily contains the available software packages. Instructions to access
+the environment will be sent to the registered participants.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Read the \href{https://docs.csc.fi/cloud/csc_notebooks/guide_for_students/}{instructions}
+\item
+  Go to the \href{https://notebooks-beta.rahtiapp.fi/welcome}{CSC notebook frontpage}
+\item
+  Login
+
+  \begin{enumerate}
+  \def\labelenumii{\alph{enumii}.}
+  \tightlist
+  \item
+    Haka login
+
+    \begin{itemize}
+    \tightlist
+    \item
+      If you have a Finnish university account, you should be able to login with Haka
+    \end{itemize}
+
+    \begin{enumerate}
+    \def\labelenumiii{\arabic{enumiii}.}
+    \tightlist
+    \item
+      Press \textbf{Login} button from the frontpage
+    \item
+      Press \textbf{Haka} button
+    \item
+      Select right organization
+    \item
+      Enter login information
+    \end{enumerate}
+  \item
+    CSC login
+
+    \begin{itemize}
+    \tightlist
+    \item
+      You can create a CSC account by following the \href{https://research.csc.fi/accounts-and-projects}{instructions}
+    \end{itemize}
+
+    \begin{enumerate}
+    \def\labelenumiii{\arabic{enumiii}.}
+    \tightlist
+    \item
+      Press \textbf{Login} button from the frontpage
+    \item
+      Press \textbf{CSC} button
+    \item
+      Enter login information
+    \end{enumerate}
+  \item
+    Special login
+
+    \begin{itemize}
+    \tightlist
+    \item
+      For those who cannot login with Haka or CSC account
+    \end{itemize}
+
+    \begin{enumerate}
+    \def\labelenumiii{\arabic{enumiii}.}
+    \tightlist
+    \item
+      Contact Giulio on \href{https://app.gitter.im/\#/room/\#microbiome_miaverse:gitter.im}{gitter} if you are not able to login
+    \item
+      We give you a guest account
+    \item
+      Press \textbf{Special Login} button from the frontpage (below the \textbf{Login} button)
+    \item
+      Enter login information (username goes to \textbf{email} slot)
+    \end{enumerate}
+  \end{enumerate}
+\item
+  Join workspace
+
+  \begin{enumerate}
+  \def\labelenumii{\alph{enumii}.}
+  \tightlist
+  \item
+    Press \textbf{Join workspace} button (Top right corner)
+  \item
+    Enter the \textbf{Join Code} (Check your email)
+  \end{enumerate}
+\item
+  Start session
+
+  \begin{enumerate}
+  \def\labelenumii{\alph{enumii}.}
+  \tightlist
+  \item
+    Press \textbf{ON} button
+  \end{enumerate}
+\item
+  You can save files to \textbf{my-work} directory. They are kept stored even when the session is closed. \textbf{shared} folder is shared with all participants.
+\end{enumerate}
+
+  \bibliography{packages.bib}
+
+\end{document}
