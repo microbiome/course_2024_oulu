@@ -2,11 +2,11 @@
 
 The course takes place daily from 9am – 5pm (CEST), including coffee,
 lunch, and short breaks. Most of the time will be dedicated to
-practical exercises, complemented by lectures and demos.
+practical exercises, complemented by short lectures and demos.
 
 We expect that participants will prepare for the course in advance.
 Instructions will be sent to the registered participants. Online
-support will be available.
+support is available.
 
 The material follows open online book created by the course teachers,
 [Orchestrating Microbiome Analysis](https://microbiome.github.io/OMA),
@@ -23,20 +23,19 @@ Reproducible workflows with R/Bioconductor and Quarto
 
 **Morning**
 
-9-10 Coffee, Welcome & Practicalities
+10-11 Coffee, Welcome & Practicalities
 
-10-11 Lecture: open & reproducible workflows 
-
-11-12 Introduction to CSC RStudio notebook 
+11-12 Learning environment (CSC RStudio notebook and reproducible reporting with Quarto)
 
 12-13 Lunch break
 
-
 **Afternoon**
 
-13-14 Reproducible reporting with Quarto
+13-14 Lecture: open data science
 
-14-16 Working with data containers and workflows
+14-16 Working with data containers and workflows 
+
+16-17 Q & A
 
 ----------------------------------------------------------------
 
@@ -46,7 +45,7 @@ Reproducible workflows with R/Bioconductor and Quarto
 
  9-10 Lecture: analysis & visualization of _tabular data_ (single omics)
 
-10-12 Subsetting, transformations, and data summaries
+10-12 Data wrangling, exploration, and summaries
 
 12-13 Lunch break
 
@@ -56,9 +55,11 @@ Reproducible workflows with R/Bioconductor and Quarto
 
 14-16 Multivariate data analysis and visualization
 
+16-17 Q & A
+
 **Evening**
 
-Informal course dinner (at own cost)
+Course dinner (optional; own cost)
 
 ----------------------------------------------------------------
 
@@ -75,10 +76,11 @@ Informal course dinner (at own cost)
 
 **Afternoon**
 
-13-15: Q & A and advanced techniques (e.g. time series, machine learning, simulation)
+13-15: Advanced methods (e.g. time series, machine learning, simulation)
 
 15-16: Summary and wrap-up
 
+16-17: Q & A
 
 
 

@@ -1,25 +1,20 @@
 Package: Course
 Title: Microbiome data science course
-Version: 0.2
-Date: 2023-06-06
+Version: 0.3
+Date: 2024-10-20
 Authors@R: 
     c(person("Leo", "Lahti", email = "leo.lahti@utu.fi",
              role = c("aut", "cre"),             
              comment = c(ORCID = "0000-0001-5537-637X")),
       person("Tuomas", "Borman", 
              role = c("aut")
-	     ),
-      person("Giulio", "Benedetti", 
-             role = c("aut")
-	     )	     
 	     )
-Description:
-    This is a training course for performing **Microbiome Analysis** with 
-    Bioconductor in R miaverse framework.
+	     )
+Description: Training course for microbiome analysis with R/Bioconductor.
 License: CC BY-SA 4.0
 Encoding: UTF-8
-URL: https://github.com/microbiome/course_2023_oulu
-BugReports: https://github.com/microbiome/course_2023_oulu/issues
+URL: https://github.com/microbiome/course_2024_oulu
+BugReports: https://github.com/microbiome/course_2024_oulu/issues
 LazyData: true
 biocViews:
     Book
