@@ -35,7 +35,7 @@ bookdown::render_book()
 The source code of this repository is fully reproducible and contains
 the Rmd files with executable code.
 
-<!--All files can be rendered at one
+All files can be rendered at one
 go by running the file [main.R](main.R). You can check the file for
 details on how to clone the repository and convert it into a gitbook,
-although this is not necessary for the training.-->
+although this is not necessary for the training.
