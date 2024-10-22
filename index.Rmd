@@ -64,7 +64,7 @@ geometry:
 - Applications from local students, and applications sent before 11 November 2024 will be given priority.
 - The course has maximum capacity of 20 participants.
 - The enrollment to the course will be confirmed within few days after the application deadline (Nov 11).
-- Applications received after 11.11 will also be considered in case there are slots still available (the enrollment will be confirmed within a week).
+- Applications received after 11.11 will also be considered in case there are slots still available.
 
 
 
