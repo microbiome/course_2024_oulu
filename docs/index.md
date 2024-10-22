@@ -1,7 +1,7 @@
 --- 
 title: "Microbiome data science with R/Bioconductor"
 subtitle: "Oulu, June 2024"
-date: "2024-10-20"
+date: "2024-10-22"
 site: bookdown::bookdown_site
 documentclass: book
 bibliography: [packages.bib]
@@ -65,6 +65,7 @@ geometry:
 - The course has maximum capacity of 20 participants.
 - The enrollment to the course will be confirmed within few days after the application deadline (Nov 11).
 - Applications received after 11.11 will also be considered in case there are slots still available (the enrollment will be confirmed within a week).
+
 
 
 ## Teachers and organizers

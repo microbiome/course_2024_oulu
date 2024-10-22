@@ -60,9 +60,12 @@ geometry:
 
 ## How to apply
 
-- Send a brief motivation letter to Anna Kaisanlahti [anna.kaisanlahti\@oulu.fi](mailto:anna.kaisanlahti@oulu.fi){.email}
-- Applications from local students, and applications sent before Nov 15 will be given priority
+- Send a brief motivation letter to Anna Kaisanlahti [anna.kaisanlahti\@oulu.fi](mailto:anna.kaisanlahti@oulu.fi){.email}. In your letter, please describe your skill level in R coding using scale 1-5 (1 = no previous experience, 5 = advanced level), and your previous experience related to bioinformatics.
+- Applications from local students, and applications sent before 11 November 2024 will be given priority.
 - The course has maximum capacity of 20 participants.
+- The enrollment to the course will be confirmed within few days after the application deadline (Nov 11).
+- Applications received after 11.11 will also be considered in case there are slots still available (the enrollment will be confirmed within a week).
+
 
 
 ## Teachers and organizers
