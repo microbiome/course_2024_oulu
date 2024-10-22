@@ -81,11 +81,3 @@ Course dinner (optional; own cost)
 15-16: Summary and wrap-up
 
 16-17: Q & A
-
-
-
-
-
-
-
-
