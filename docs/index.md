@@ -1,7 +1,7 @@
 --- 
 title: "Microbiome data science with R/Bioconductor"
-subtitle: "Oulu, June 2024"
-date: "2024-10-22"
+subtitle: "Oulu, December 2024"
+date: "2024-10-23"
 site: bookdown::bookdown_site
 documentclass: book
 bibliography: [packages.bib]

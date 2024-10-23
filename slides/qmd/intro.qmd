@@ -8,7 +8,7 @@ editor: visual
 
 ### Multi-omic data science with R/Bioconductor
 
-#### Oulu summer school, June 19-21, 2023
+#### Oulu summer school, December 18-20, 2024
 
 #### Welcome!
 
