@@ -1,5 +1,5 @@
 --- 
-title: "Microbiome data science with R/Bioconductor"
+title: "Microbiome Data Science & Multi-Omics with R/Bioconducto"
 subtitle: "Oulu, December 2024"
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
