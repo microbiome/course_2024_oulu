@@ -1,7 +1,7 @@
 --- 
 title: "Microbiome Data Science & Multi-Omics with R/Bioconductor"
 subtitle: "Oulu, December 2024"
-date: "2024-10-24"
+date: "2024-11-14"
 site: bookdown::bookdown_site
 documentclass: book
 bibliography: [packages.bib]
@@ -66,6 +66,9 @@ geometry:
 - The enrollment to the course will be confirmed within few days after the application deadline (Nov 11).
 - Applications received after 11.11 will also be considered in case there are slots still available.
 
+## Before the course
+
+For self-learning, visit [this site](https://microbiome.github.io/OMA/docs/devel/pages/training.html).
 
 
 ## Teachers and organizers
