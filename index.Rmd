@@ -90,7 +90,7 @@ More details on its enforcement are available [here](https://bioconductor.github
 
 ## Acknowledgments
 
-**Citation**: We thank all [developers and contributors](https://microbiome.github.io) who have contributed open resources that supported the development of the training material. Kindly cite the course material as @miacourse.
+**Citation**: We thank all [developers and contributors](https://microbiome.github.io) who have contributed open resources that supported the development of the training material. Kindly cite the course material as @miacourse. This project has received funding from the European Union’s Horizon 2020 research and innovation programme under grant agreement No 952914 (FindingPheno).
 
 **Contact**: Refer to [https://microbiome.github.io](https://microbiome.github.io).
 
